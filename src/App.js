@@ -38,7 +38,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/johnniewalker">
       <ScrollTop />
       <div className="App" ref={appScroll}>
         {isLg ? <HeaderLg /> : <HeaderSm subMenu={ subMenu } changeSubMenu={ changeSubMenu } />}

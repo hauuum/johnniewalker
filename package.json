@@ -22,7 +22,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
-  "homepage": "https://hauuum.github.io/johnniewalker/index.html",
+  "homepage": "https://hauuum.github.io/johnniewalker",
   "eslintConfig": {
     "extends": [
       "react-app",
