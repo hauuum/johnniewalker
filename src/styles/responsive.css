@@ -315,7 +315,7 @@
     border: none;
   }
   .prdList-page .jw-story {
-    background: url(/public/assets/jw-story.png) center center no-repeat;
+    background: url(/src/assets/jw-story.png) center center no-repeat;
     background-size: cover;
   }
   .prdList-page .jw-story {

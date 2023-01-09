@@ -1,6 +1,11 @@
 import React, { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
+// Images
+import logoImgLarge from '../assets/jw-lg-logo.png';
+import searchIcon from '../assets/search-gray-icon.png';
+
+
 
 const HeaderLg = () => {
   const aTag = useRef(null);
@@ -19,13 +24,13 @@ const HeaderLg = () => {
       <div className="header-lg-top">
         <div className="container">
           <h1 className="logo-lg">
-            <NavLink to={"/"}><img src="/assets/jw-lg-logo.png" alt="조니워커 로고"/></NavLink>
+            <NavLink to={"/"}><img src={ logoImgLarge } alt="조니워커 로고"/></NavLink>
           </h1>
           <form>
             <label>
               <input type="type" className="input search-lg-input" placeholder='제품 또는 스토어를 검색해주세요'/>
             </label>
-            <img src="/assets/search-gray-icon.png" alt="검색하기"/>
+            <img src={ searchIcon } alt="검색하기"/>
           </form>
         </div>
       </div>

@@ -38,7 +38,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter basename="/johnniewalker">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ScrollTop />
       <div className="App" ref={appScroll}>
         {isLg ? <HeaderLg /> : <HeaderSm subMenu={ subMenu } changeSubMenu={ changeSubMenu } />}

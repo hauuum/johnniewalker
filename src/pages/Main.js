@@ -46,11 +46,11 @@ const Main = () => {
           <p className="subTitle">스카치 위스키의 블렌딩은 예술이자 과학입니다. 조니워커에겐 이것은 창립자 자신의 초기 블렌드까지 거의 2세기를 거슬러 올라가는 위스키 유형에 대한 깊이 있는 기술, 헌신 및 지식입니다.
           </p>
           <div className="sns-imgs">
-            <a href="/" className="img1"><img src="/assets/sns-1.jpg" alt="조니워커 SNS 이미지1"/></a>
-            <a href="/" className="img5"><img src="/assets/sns-51.jpg" alt="조니워커 SNS 이미지5"/></a>
-            <a href="/" className="img2"><img src="/assets/sns-2.jpg" alt="조니워커 SNS 이미지2"/></a>
-            <a href="/" className="img3"><img src="/assets/sns-3.jpg" alt="조니워커 SNS 이미지3"/></a>
-            <a href="/" className="img4"><img src="/assets/sns-4.jpg" alt="조니워커 SNS 이미지4"/></a>
+            <a href="/" className="img1"><img src="/src/assets/sns-1.jpg"  alt="조니워커 SNS 이미지1"/></a>
+            <a href="/" className="img5"><img src="/src/assets/sns-51.jpg" alt="조니워커 SNS 이미지5"/></a>
+            <a href="/" className="img2"><img src="/src/assets/sns-2.jpg" alt="조니워커 SNS 이미지2"/></a>
+            <a href="/" className="img3"><img src="/src/assets/sns-3.jpg" alt="조니워커 SNS 이미지3"/></a>
+            <a href="/" className="img4"><img src="/src/assets/sns-4.jpg" alt="조니워커 SNS 이미지4"/></a>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@ const Main = () => {
         <h3 className="ir-so">신제품 </h3>
         <div className="container">
           <div className="limited-edition-row">
-            <img src="/assets/jw-limitedEdition.png" alt="조니워커 로얄 블루 리미티드 에디션"/>
+            <img src="/src/assets/jw-limitedEdition.png" alt="조니워커 로얄 블루 리미티드 에디션"/>
             <div className="limited-edition-desc">
               <h4 className="title">조니워커 로얄 블루 리미티드 에디션</h4>
               <p>장대한 성취를 축하하는 것부터 단순하고 진심 어린 '감사합니다'에 이르기까지 모든 경우에 어울리는 조니워커 위스키 선물이 있습니다. <br />
@@ -66,7 +66,7 @@ const Main = () => {
 완벽한 선물을 위해 탁월한 블렌디드 스카치 위스키 제품군을 살펴보십시오.<br />
                 
 조니워커의 빅 볼드 플레이버(big bold flavours)를 기념하여 탄생한 조니워커 로얄 블루리미티드 에디션 상자. </p>
-              <NavLink to={"/PrdList/PrdDetail"}>자세히 보러가기 <img src="/assets/right-arrow-blue-icon.png" alt="자세히 보러가기" /></NavLink>
+              <NavLink to={"/PrdList/PrdDetail"}>자세히 보러가기 <img src="/src/assets/right-arrow-blue-icon.png" alt="자세히 보러가기" /></NavLink>
             </div>
           </div>
         </div>

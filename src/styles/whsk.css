@@ -49,19 +49,19 @@
   z-index: 1;
 }
 .whsk-info-page .whsk-history {
-  background-image: url(/public/assets/whsk1.png);
+  background-image: url(/src/assets/whsk1.png);
 }
 .whsk-info-page .whsk-made {
-  background-image: url(/public/assets/whsk2.png);
+  background-image: url(/src/assets/whsk2.png);
 }
 .whsk-info-page .whsk-type {
-  background-image: url(/public/assets/whsk3.png);
+  background-image: url(/src/assets/whsk3.png);
 }
 .whsk-info-page .drink-whsk {
-  background-image: url(/public/assets/whsk4.png);
+  background-image: url(/src/assets/whsk4.png);
 }
 .whsk-info-page .serve-whsk {
-  background-image: url(/public/assets/whsk5.png);
+  background-image: url(/src/assets/whsk5.png);
 }
 .whsk-info-page .whsk-list-wrap .container {
   position: relative;

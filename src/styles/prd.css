@@ -16,7 +16,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url('/public/assets/prdList-bg.png') center center no-repeat;
+  background: url('/src/assets/prdList-bg.png') center center no-repeat;
   background-size: contain;
   z-index: 1;
   opacity: .048;
@@ -29,7 +29,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url('/public/assets/prdList-bg.png') center center no-repeat;
+  background: url('/src/assets/prdList-bg.png') center center no-repeat;
   background-size: contain;
   z-index: 1;
   opacity: .06;
@@ -216,7 +216,7 @@
 .prdList-page .jw-story-bg {
   width: 70%;
   height: 28.75rem;
-  background: url(/public/assets/jw-story.png) center center no-repeat;
+  background: url(/src/assets/jw-story.png) center center no-repeat;
   background-size: cover;
   border-radius: 0 360px 360px 0;
 }
