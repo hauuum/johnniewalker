@@ -1,0 +1,191 @@
+.inquiry-page h3,
+.inquiry-page .faq-wrap h4 {
+  color: var(--Color35);
+}
+.inquiry-page .faq {
+  margin-bottom: 6.25rem;
+}
+.inquiry-page .faq,
+.inquiry-page .inquiry {
+  width: 70%;
+  margin: 0 auto;
+}
+.inquiry-page .faq {
+  margin-bottom: 8.75rem;
+}
+.inquiry-page .faq-wrap {
+  margin-top: 2.5rem;
+}
+.inquiry-page .faq-wrap li {
+  text-align: left;
+  margin-bottom: 1.875rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.inquiry-page .faq-wrap h4,
+.inquiry-page .faq-wrap p {
+  padding: 1rem;
+}
+.inquiry-page .faq-wrap h4 {
+  font-weight: 600;
+  background: #EBEBEB;
+  word-break: keep-all;
+}
+.inquiry-page .faq-wrap p {
+  font-size: var(--Font14);
+  font-weight: 400;
+  background: #F5F5F5;
+  color: var(--Color42);
+  word-break: keep-all;
+}
+.inquiry-page .inquiry h3{
+  margin-bottom: 1.25rem;
+}
+.inquiry-page .inquiry .form-wrap {
+  width: 100%;
+  margin: 2.5rem auto 0;
+  padding: 5rem 0;
+  box-sizing: border-box;
+  background: #F5F5F5;
+  border-radius: 4px;
+}
+.inquiry-page .inquiry .form-wrap form {
+  width: 80%;
+  margin: 0 auto;
+}
+.inquiry-page .inquiry .form-list {
+  width: 40%;
+  margin-bottom: 1.875rem;
+}
+.inquiry-page .inquiry .form-list label {
+  width: 100%;
+  text-align: left;
+  color: var(--Color35);
+}
+.inquiry-page .inquiry .form-list input {
+  width: 100%;
+  padding: 0.75rem 0.75rem;
+  font-size: var(--Font16);
+  box-sizing: border-box;
+  color: var(--Color75);
+}
+.inquiry-page .inquiry .form-list input,
+.inquiry-page .inquiry .form-list select,
+.inquiry-page .inquiry .form-list textarea {
+  width: 100%;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  background: #fff;
+  margin-top: .25rem;
+  color: var(--Color42);
+}
+.inquiry-page .inquiry .form-list input:focus,
+.inquiry-page .inquiry .form-list select:focus,
+.inquiry-page .inquiry .form-list textarea:focus {
+  border: 1px solid var(--MainBlue);
+}
+.inquiry-page .inquiry .form-list textarea {
+  height: auto;
+}
+.inquiry-page .inquiry .vldtn{
+  display: none;
+  margin-top: .25rem;
+}
+.inquiry-page .inquiry .form-email,
+.inquiry-page .inquiry .form-text {
+  width: 100%;
+}
+.inquiry-page .inquiry .form-email div {
+  display: flex;
+  align-items: center;
+}
+.inquiry-page .inquiry .form-email input,
+.inquiry-page .inquiry .form-email select {
+  flex: 1;
+}
+.inquiry-page .inquiry .form-email select {
+  margin-left: .5rem;
+}
+.inquiry-page .inquiry .form-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.inquiry-page .inquiry .form-check-list {
+  text-align: left;
+  margin-top: 1.25rem;
+}
+.inquiry-page .inquiry .form-check-list label{
+  display: flex;
+  align-items: center;
+  font-size: var(--Font12);
+  color: var(--Color75);
+}
+.inquiry-page .inquiry .form-check-list input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: .5rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+.inquiry-page .inquiry .btn-blue {
+  margin-top: 4em;
+}
+
+/* .inquiry-page .inquiry-list {
+  margin-top: 8rem;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1.875rem;
+  box-sizing: border-box;
+} */
+.inquiry-page .inquiry-items {
+  background: #F5F5F5;
+  padding: 1.25rem;
+  box-sizing: border-box;
+  margin-bottom: 1.25rem;
+  border-radius: 4px;
+}
+.inquiry-page .inquiry-items:first-child {
+  position: relative;
+  margin-top: 8rem;
+}
+.inquiry-page .inquiry-items:first-child:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+  top: -1.25rem;
+  left: 0;
+}
+.inquiry-page .inquiry-items .inquiry-info{
+  display: flex;
+  align-items: center;
+}
+.inquiry-page .inquiry-items .inquiry-info div {
+  font-size: var(--Font12);
+  font-weight: 400;
+  color: var(--Color75);
+  line-height: 1;
+}
+.inquiry-page .inquiry-items .inquiry-info div:first-child {
+  font-size: var(--Font12);
+  font-weight: 600;
+  color: var(--Color42);
+  margin-right: .5rem;
+  padding-right: .5rem;
+  border-right: 1px solid #e0e0e0;
+}
+.inquiry-page .inquiry-items .inquiry-cont {
+  font-size: var(--Font14);
+  text-align: left;
+  margin-top: 1rem;
+  word-break: keep-all;
+  color: var(--Color35);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

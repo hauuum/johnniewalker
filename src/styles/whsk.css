@@ -1,0 +1,101 @@
+.whsk-info-page {
+  padding: 0;
+}
+.whsk-info-page .whsk-video {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.whsk-info-page .whsk-video iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.whsk-info-page .whsk-list-wrap {
+  margin-bottom: 1.25rem;
+}
+.whsk-info-page .whsk-video-desc {
+  margin: 6.25rem auto;
+}
+.whsk-info-page .whsk-video-desc .title {
+  width: 60%;
+  margin: 0 auto;
+}
+.whsk-info-page .whsk-video-desc p {
+  width: 50%;
+  font-weight: 400;
+  color: var(--Color42);
+  margin: 2.5rem auto 0;
+  word-break: keep-all;
+}
+.whsk-info-page .whsk-list-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+  box-sizing: border-box;
+}
+.whsk-info-page .whsk-list-wrap:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  z-index: 1;
+}
+.whsk-info-page .whsk-history {
+  background-image: url(/public/assets/whsk1.png);
+}
+.whsk-info-page .whsk-made {
+  background-image: url(/public/assets/whsk2.png);
+}
+.whsk-info-page .whsk-type {
+  background-image: url(/public/assets/whsk3.png);
+}
+.whsk-info-page .drink-whsk {
+  background-image: url(/public/assets/whsk4.png);
+}
+.whsk-info-page .serve-whsk {
+  background-image: url(/public/assets/whsk5.png);
+}
+.whsk-info-page .whsk-list-wrap .container {
+  position: relative;
+  z-index: 2;
+}
+.whsk-info-page .whsk-list-wrap .whsk-desc{
+  width: 80%;
+  margin: 0 auto;
+}
+.whsk-info-page .whsk-list-wrap:nth-of-type(even) .whsk-desc > div {
+  text-align: left;
+}
+.whsk-info-page .whsk-list-wrap:nth-of-type(odd) .whsk-desc > div {
+  text-align: right;
+}
+.whsk-info-page .whsk-list-wrap h3 {
+  font-size: 2rem;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 900;
+  color: var(--MainWhite);
+}
+.whsk-info-page .whsk-list-wrap p {
+  font-weight: 400;
+  color: #dedede;
+  margin: .5rem 0 2.5rem;
+  white-space: pre-wrap;
+}
+.whsk-info-page .whsk-list-wrap a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--MainYellow);
+}
+.whsk-info-page .whsk-list-wrap img{
+  height: 1rem;
+  margin-left: .5rem;
+}
+

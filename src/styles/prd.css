@@ -1,0 +1,447 @@
+/* prdList */
+.prdList-page {
+  padding-top: 4.625rem;
+  background: #FBFBFB;
+}
+.prdList-page .prd-banner {
+  position: relative;
+  background: #000721;
+  overflow: hidden;
+}
+.prdList-page .prd-banner:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -300px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/public/assets/prdList-bg.png') center center no-repeat;
+  background-size: contain;
+  z-index: 1;
+  opacity: .048;
+}
+.prdList-page .prd-banner:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 300px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/public/assets/prdList-bg.png') center center no-repeat;
+  background-size: contain;
+  z-index: 1;
+  opacity: .06;
+}
+.prdList-page .prd-banner .container {
+  position: relative;
+  padding-top: 3rem;
+}
+.prdList-page .prd-banner img{
+  width: 62%;
+  transition: .4s; 
+}
+.prdList-page .prd-list .container > p{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 6.25rem;
+  word-break: keep-all;
+  color: var(--Color35);
+  font-weight: 400;
+} 
+.prdList-page .prd-list .container > p em {
+  display: block;
+  font-size: var(--Font20);
+  font-weight: 700;
+  color:  var(--MainBlack);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.prd-list-wrap {
+  width: 80%;
+  margin: 0 auto 7.5rem;
+}
+.prd-list-wrap:last-child {
+  margin: 0 auto;
+}
+.slash {
+  margin: .75rem auto 0;
+}
+.prd-list-wrap > p {
+  font-weight: 400;
+  color: var(--Color42);
+  margin: 1.25rem 0 2.5rem;
+  word-break: keep-all;
+}
+.prdList-page .prd-list-wrap .prd-items {
+  display: grid;
+  grid-gap: .75rem;
+  transition: .6s;
+}
+.prdList-page .prd-sons .prd-items {
+  grid-template-columns: repeat(4, 1fr);
+}
+.prdList-page .prd-son-item {
+  position: relative;
+  overflow: hidden;
+}
+.prdList-page .prd-son-item a{
+  background: #fff;
+  box-shadow: 0 2px 16px 4px rgba(0,0,0,.02);
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.prdList-page .prd-son-item img {
+  width: 70%;
+  margin-top: -1rem;
+}
+.prdList-page .prd-son-item .prd-son-hover {
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  font-size: var(--Font12);
+  color: #fff;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-align: center;
+  word-break: keep-all;
+  background: rgba(246,190,0,.9);
+  transition: .4s;
+}
+.prdList-page .prd-son-item:hover {
+  border: 3px solid var(--MainYellow);
+  box-sizing: border-box;
+}
+.prdList-page .prd-son-item:hover .prd-son-hover {
+  bottom: 0;
+}
+.prdList-page .prd-items .prd-sm-desc {
+  display: none;
+}
+.prdList-page .prd-colours .prd-items {
+  grid-template-columns: repeat(3, 1fr);
+}
+.prdList-page .prd-colours .prd-colours-item {
+  position: relative;
+}
+.prdList-page .prd-colours .prd-colours-item a {
+  background: rgba(0,0,0,0.95);
+  border: 4px solid rgba(0,0,0,0.95);
+  box-sizing: border-box;
+}
+.prdList-page .prd-colours .prd-colours-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(255,255,255,.1) 20%, black);
+  z-index: 0;
+}
+.prdList-page .prd-colours .prd-colours-item img {
+  width: 54%;
+}
+.prdList-page .prd-colours .prd-items .prd-colours-hover{
+  position: absolute;
+  left: .75rem;
+  right: 0;
+  bottom: .5rem;
+  width: calc(100% - 1.5rem);
+  background: rgba(0,0,0,.6);
+  z-index: 1;
+  color: var(--MainWhite);
+  font-size: var(--Font12);
+  padding: .5rem;
+  box-sizing: border-box;
+  text-align: center;
+  transition: .2s;
+}
+.prdList-page .prd-colours .prd-colours-item:hover a{
+  position: relative;
+  border: 4px solid var(--MainYellow);
+}
+.prdList-page .prd-colours .prd-colours-item:hover .prd-colours-hover {
+  bottom: 1rem;
+  background: rgba(0,0,0,.8);
+  color: var(--MainYellow);
+}
+.prdList-page .prd-limited .prd-items{
+  grid-template-columns: repeat(3, 1fr);
+}
+.prdList-page .prd-limited .prd-limited-item {
+  position: relative;
+  overflow: hidden;
+}
+.prdList-page .prd-limited .prd-limited-item a {
+  background: #fff;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 2px 16px 4px rgb(0 0 0 / 2%);
+  padding: 1rem 0 .5rem;
+  box-sizing: border-box;
+}
+.prdList-page .prd-limited .prd-limited-item img {
+  width: 60%;
+}
+.prdList-page .prd-limited .prd-limited-item .prd-limited-hover{
+  position: absolute;
+  left: 0;
+  bottom: -200px;
+  width: 100%;
+  padding: .5rem;
+  background: rgba(246,190,0,.9);
+  box-sizing: border-box;
+  color: var(--MainWhite);
+  font-size: var(--Font12);
+  text-align: center;
+  transition: .4s;
+}
+.prdList-page .prd-limited .prd-limited-item:hover {
+  border: 3px solid var(--MainYellow);
+}
+.prdList-page .prd-limited .prd-limited-item:hover .prd-limited-hover {
+  bottom: 0;
+}
+
+.prdList-page .jw-story {
+  margin-top: 12.5rem;
+}
+.prdList-page .jw-story .container {
+  position: relative;
+}
+.prdList-page .jw-story-bg {
+  width: 70%;
+  height: 28.75rem;
+  background: url(/public/assets/jw-story.png) center center no-repeat;
+  background-size: cover;
+  border-radius: 0 360px 360px 0;
+}
+.prdList-page .jw-story-txt {
+  position: absolute;
+  right: 5rem;
+  top: 50%;
+  width: 40%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+.prdList-page .jw-story-txt .title {
+  margin-bottom: .75rem;
+}
+.prdList-page .jw-story-txt span {
+  font-size: inherit;
+  padding: .5rem .875rem;
+  background: #fbfbfb;
+  box-sizing: border-box;
+}
+.prdList-page .jw-story-txt .title span{
+  font-weight: 700;
+  color: var(--Color35);
+  padding: .75rem .875rem;
+}
+.prdList-page .jw-story-txt p  {
+  margin: .25rem 0;
+}
+.prdList-page .jw-story-txt p span{
+  color: var(--Color42);
+  font-weight: 400;
+}
+.prdList-page .jw-story-txt .more-btn {
+  color: var(--MainBlue);
+}
+.prdList-page .jw-story-txt .more-btn a {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem .875rem;
+  background: #fbfbfb;
+}
+.prdList-page .jw-story-txt img {
+  height: 1rem;
+  padding-left: .5rem;
+}
+
+/* prdDetail */
+.prdDetail-page {
+  padding-top: 4.625rem;
+}
+.prdDetail-page .prd-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #01BDBE 20%, #012F47 40%);
+}
+.prdDetail-page .prd-banner img{
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.prdDetail-page .prd-info  {
+  margin-top: 5rem;
+}
+.prdDetail-page .prd-info .container {
+  display: flex;
+  justify-content: center;
+}
+.prdDetail-page .prd-info .prd-imgs{
+  position: relative;
+  width: 20%;
+}
+.prdDetail-page .prd-info .prd-imgs img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  transform-origin: bottom;
+}
+.prdDetail-page .prd-info .prd-imgs img:nth-of-type(1) {
+  transform: rotate(0) scale(1.05);
+  z-index: 6;
+}
+.prdDetail-page .prd-info .prd-imgs.scroll img:nth-of-type(2) {
+  z-index: 5;
+  opacity: .6;
+  animation: rotate1 .8s linear .4s forwards alternate;
+}
+.prdDetail-page .prd-info .prd-imgs.scroll img:nth-of-type(3) {
+  z-index: 4;
+  opacity: .4;
+  animation: rotate2 .8s linear .4s forwards alternate;
+}
+.prdDetail-page .prd-info .prd-imgs.scroll img:nth-of-type(4) {
+  z-index: 3;
+  opacity: .2;
+  animation: rotate3 .8s linear .4s forwards alternate;
+}
+.prdDetail-page .prd-info .prd-imgs.scroll img:nth-of-type(5) {
+  z-index: 2;
+  opacity: .08;
+  animation: rotate4 .8s linear .4s forwards alternate;
+}
+.prdDetail-page .prd-info .prd-imgs.scroll img:nth-of-type(6) {
+  z-index: 1;
+  opacity: .05;
+  animation: rotate5 .8s linear .4s forwards alternate;
+}
+@keyframes rotate1 {
+  100% {transform: rotate(-15deg) translateX(5px) scale(1);}
+}
+@keyframes rotate2 {
+  100% {transform: rotate(-30deg) translateX(10px) scale(1);}
+}
+@keyframes rotate3 {
+  100% {transform: rotate(-45deg) translateX(15px) scale(1);}
+}
+@keyframes rotate4 {
+  100% {transform: rotate(-60deg) translateX(20px) scale(1);}
+}
+@keyframes rotate5 {
+  100% {transform: rotate(-75deg) translateX(25px) scale(1);}
+}
+
+.prdDetail-page .prd-info .prd-desc{
+  width: 50%;
+  margin-left: 1.25rem;
+  padding: 2.5rem 0;
+  box-sizing: border-box;
+}
+.prdDetail-page .prd-info .prd-desc h3 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #012F47;
+}
+.prdDetail-page .prd-info .prd-desc p {
+  width: 80%;
+  font-size: var(--Font16);
+  margin-top: 1.25rem;
+  text-align: left;
+  color: var(--Color35);
+  font-weight: 400;
+  word-break: keep-all;
+}
+.prdDetail-page .prd-list-wrap .slash + p {
+  font-size: var(--Font16);
+  font-weight: 400;
+  margin: 1.25rem auto 2.5rem;
+  color: var(--Color42);
+   word-break: keep-all;
+}
+.prdDetail-page .prd-serve .prd-serve-imgs {
+  position: relative;
+  text-align: center;
+}
+.prdDetail-page .prd-serve .prd-serve-imgs img {
+  width: 20%;
+  margin-left: 5rem;
+}
+.prdDetail-page .prd-serve .prd-serve-desc p {
+  width: 40%;
+  color: var(--Color42);
+  font-size: var(--Font14);
+  font-weight: 400;
+  margin: 0 auto 1.25rem;
+  word-break: keep-all;
+}
+.prdDetail-page .prd-serve .prd-serve-desc span{
+  display: block;
+  font-weight: 900;
+}
+.prdDetail-page .prd-flavours p{
+  color: var(--Color35);
+}
+.prdDetail-page .prd-story-cont {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 70%;
+  margin: 1.25rem auto 5rem;
+}
+
+.prdDetail-page .prd-story-cont img {
+  width: 45%;
+}
+.prdDetail-page .prd-story-cont p {
+  width: calc(100% - 45% - 1.25rem);
+  font-size: var(--Font14);
+  font-weight: 400;
+  color: var(--Color42);
+  text-align: left;
+  word-break: keep-all;
+}
+.prdDetail-page .prd-recipe .prd-recipe-imgs{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  /* grid-template-rows: masonry; */
+  grid-auto-flow: dense;
+  grid-gap: .5rem;
+  width: 80%;
+  margin: 1.25rem auto 5rem;
+}
+.prdDetail-page .prd-recipe .prd-recipe-imgs a {
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.prdDetail-page .prd-recipe .prd-recipe-imgs a:nth-of-type(2n-1){
+  grid-row: span 2;
+}
+.prdDetail-page .prd-recipe .prd-recipe-imgs a:nth-of-type(3n){
+  grid-column: span 1;
+}
+.prdDetail-page .prd-recipe .prd-recipe-imgs a:nth-of-type(5n){
+  grid-row: span 2;
+}
+.prdDetail-page .prd-recipe .prd-recipe-imgs img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .6s;
+}
+.prdDetail-page .prd-recipe .prd-recipe-imgs a:hover img{
+  transform: scale(1.2);
+}
