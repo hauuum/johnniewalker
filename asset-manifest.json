@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/johnniewalker/static/css/main.db365430.css",
+    "main.js": "/johnniewalker/static/js/main.80f2f642.js",
+    "static/media/whsk3.png": "/johnniewalker/static/media/whsk3.f8513011c610ee18aa32.png",
+    "static/media/whsk4.png": "/johnniewalker/static/media/whsk4.f40dba6fc30cdd0e2baf.png",
+    "static/media/whsk1.png": "/johnniewalker/static/media/whsk1.6b964b7fcafdb314580b.png",
+    "static/media/line-banner.png": "/johnniewalker/static/media/line-banner.d9c396df55bbc8e97fe3.png",
+    "static/media/whsk2.png": "/johnniewalker/static/media/whsk2.f826cde37501bb31473c.png",
+    "static/media/main-banner2.jpg": "/johnniewalker/static/media/main-banner2.58beff2589c747614983.jpg",
+    "static/media/pattern.svg": "/johnniewalker/static/media/pattern.e0503c18ecc8d4d377b6.svg",
+    "static/media/main-banner3.jpg": "/johnniewalker/static/media/main-banner3.8afec3b2ca09fd78c3ba.jpg",
+    "static/media/whsk5.png": "/johnniewalker/static/media/whsk5.92109e126f6eab287353.png",
+    "static/media/jw-story.png": "/johnniewalker/static/media/jw-story.f2c2789a8549a10524bb.png",
+    "static/media/prdList-bg.png": "/johnniewalker/static/media/prdList-bg.f9b0eecb374a88e1057b.png",
+    "static/media/jw-house2.jpg": "/johnniewalker/static/media/jw-house2.94b21839cdf8db2fd288.jpg",
+    "static/media/jw-house1.jpg": "/johnniewalker/static/media/jw-house1.c626ad3039eb1bd0c5e8.jpg",
+    "static/media/main-banner1.jpeg": "/johnniewalker/static/media/main-banner1.32ec7481d625cbdefb57.jpeg",
+    "index.html": "/johnniewalker/index.html",
+    "main.db365430.css.map": "/johnniewalker/static/css/main.db365430.css.map",
+    "main.80f2f642.js.map": "/johnniewalker/static/js/main.80f2f642.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db365430.css",
+    "static/js/main.80f2f642.js"
+  ]
+}
