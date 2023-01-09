@@ -14,6 +14,7 @@
     "swiper": "^8.4.2",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://hauuum.github.io/johnniewalker",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
+// Component
 import ScrollTop from './components/ScrollTop';
 import HeaderLg from './components/HeaderLg';
 import HeaderSm from './components/HeaderSm';
@@ -13,6 +14,7 @@ import JwStory from './pages/JwStory';
 import Inquiry from './pages/Inquiry';
 import Footer from './components/Footer';
 
+// Style
 import './App.css';
 import './styles/reset.css';
 import './styles/common.css';
@@ -25,7 +27,6 @@ import './styles/inquiry.css';
 import './styles/responsive.css';
 
 
-
 function App() {
   const isLg = useMediaQuery({
     query: "(min-width: 48rem)"
@@ -34,13 +35,6 @@ function App() {
   const [subMenu, setSubMenu] = useState(false);
   const changeSubMenu = () => { 
     setSubMenu(!subMenu);
-    
-    console.log(subMenu);
-
-    // if (subMenu) { 
-    //   appScroll.current.style = "height: 100vh, overflowY: hidden";
-    // }
-    // appScroll.current.style = "height: auto, overflowY: auto";
   }
 
   return (
@@ -73,5 +67,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
