@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/johnniewalker/static/css/main.f6da9c79.css",
+    "main.css": "/johnniewalker/static/css/main.7a30c58e.css",
     "main.js": "/johnniewalker/static/js/main.a9fb3c58.js",
     "static/media/whsk3.png": "/johnniewalker/static/media/whsk3.f8513011c610ee18aa32.png",
     "static/media/whsk4.png": "/johnniewalker/static/media/whsk4.f40dba6fc30cdd0e2baf.png",
@@ -9,7 +9,7 @@
     "static/media/prdDetail-bg.png": "/johnniewalker/static/media/prdDetail-bg.c5af72ca7e17387e742d.png",
     "static/media/whsk2.png": "/johnniewalker/static/media/whsk2.f826cde37501bb31473c.png",
     "static/media/main-banner2.jpg": "/johnniewalker/static/media/main-banner2.58beff2589c747614983.jpg",
-    "static/media/pattern.svg": "/johnniewalker/static/media/pattern.e0503c18ecc8d4d377b6.svg",
+    "static/media/pattern.svg": "/johnniewalker/static/media/pattern.5991e00b56983148e4c0.svg",
     "static/media/main-banner3.jpg": "/johnniewalker/static/media/main-banner3.8afec3b2ca09fd78c3ba.jpg",
     "static/media/whsk5.png": "/johnniewalker/static/media/whsk5.92109e126f6eab287353.png",
     "static/media/jw-story.png": "/johnniewalker/static/media/jw-story.f2c2789a8549a10524bb.png",
@@ -25,11 +25,11 @@
     "static/media/instagram-icon.png": "/johnniewalker/static/media/instagram-icon.10e8ab1c97826be417a2.png",
     "static/media/jw-lg-logo.png": "/johnniewalker/static/media/jw-lg-logo.ab355010915e8af2eceb.png",
     "index.html": "/johnniewalker/index.html",
-    "main.f6da9c79.css.map": "/johnniewalker/static/css/main.f6da9c79.css.map",
+    "main.7a30c58e.css.map": "/johnniewalker/static/css/main.7a30c58e.css.map",
     "main.a9fb3c58.js.map": "/johnniewalker/static/js/main.a9fb3c58.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6da9c79.css",
+    "static/css/main.7a30c58e.css",
     "static/js/main.a9fb3c58.js"
   ]
 }
