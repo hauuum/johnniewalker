@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/johnniewalker/static/css/main.bb5007ab.css",
-    "main.js": "/johnniewalker/static/js/main.1148abce.js",
+    "main.js": "/johnniewalker/static/js/main.0cd841e8.js",
     "static/media/whsk3.png": "/johnniewalker/static/media/whsk3.f8513011c610ee18aa32.png",
     "static/media/whsk4.png": "/johnniewalker/static/media/whsk4.f40dba6fc30cdd0e2baf.png",
     "static/media/whsk1.png": "/johnniewalker/static/media/whsk1.6b964b7fcafdb314580b.png",
@@ -12,7 +12,10 @@
     "static/media/main-banner3.jpg": "/johnniewalker/static/media/main-banner3.8afec3b2ca09fd78c3ba.jpg",
     "static/media/whsk5.png": "/johnniewalker/static/media/whsk5.92109e126f6eab287353.png",
     "static/media/jw-story.png": "/johnniewalker/static/media/jw-story.f2c2789a8549a10524bb.png",
+    "static/media/jw-prd-09.png": "/johnniewalker/static/media/jw-prd-09.99fe204e8caf1e48d528.png",
     "static/media/prdList-bg.png": "/johnniewalker/static/media/prdList-bg.f9b0eecb374a88e1057b.png",
+    "static/media/jw-prd-10.png": "/johnniewalker/static/media/jw-prd-10.57ba997b4d73f3e20e0d.png",
+    "static/media/jw-prd-08.png": "/johnniewalker/static/media/jw-prd-08.229d506247871e596bc1.png",
     "static/media/sns-51.jpg": "/johnniewalker/static/media/sns-51.1e604d7bd63f11b31b64.jpg",
     "static/media/jw-limitedEdition.png": "/johnniewalker/static/media/jw-limitedEdition.50138f5b07a9e3bf8be1.png",
     "static/media/jw-prd-05.png": "/johnniewalker/static/media/jw-prd-05.72d89923353e0fe3e3a0.png",
@@ -40,10 +43,10 @@
     "static/media/jw-lg-logo.png": "/johnniewalker/static/media/jw-lg-logo.ab355010915e8af2eceb.png",
     "index.html": "/johnniewalker/index.html",
     "main.bb5007ab.css.map": "/johnniewalker/static/css/main.bb5007ab.css.map",
-    "main.1148abce.js.map": "/johnniewalker/static/js/main.1148abce.js.map"
+    "main.0cd841e8.js.map": "/johnniewalker/static/js/main.0cd841e8.js.map"
   },
   "entrypoints": [
     "static/css/main.bb5007ab.css",
-    "static/js/main.1148abce.js"
+    "static/js/main.0cd841e8.js"
   ]
 }
