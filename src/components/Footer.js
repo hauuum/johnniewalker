@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import '../styles/footer.css';
+//Images
+import instagram from '../assets/instagram-icon.png';
+import twitter from '../assets/twitter-icon.png';
+import youtube from '../assets/youtube-icon.png';
 
 const Footer = ( props ) => { 
   const [lang, setLang] = useState("KOREA");
@@ -7,7 +11,6 @@ const Footer = ( props ) => {
     setLang(e.target.value); 
     alert(`선택하신 ${e.target.value} 언어로 변경합니다. (준비중)`)
   }
-
 
   return (
     <footer>
@@ -27,11 +30,11 @@ const Footer = ( props ) => {
           </div>
           <div className="footer-sitemap">
             <div>
-              <a href="/">이용약관</a>
-              <a href="/">개인정보 보호 및 쿠키공지</a>
-              <a href="/">UGC POLICY</a>
-              <a href="/">웹접근성 도움말</a>
-              <a href="/">PRIVACY SETTINGS</a>
+              <a href="#">이용약관</a>
+              <a href="#">개인정보 보호 및 쿠키공지</a>
+              <a href="#">UGC POLICY</a>
+              <a href="#">웹접근성 도움말</a>
+              <a href="#">PRIVACY SETTINGS</a>
             </div>
             <p className="footer-desc">DRINKAWARE.CO.UKDRINKIQTHEBAR.COMTHE JOHNNIE WALKER, JOHNNIE WALKER HOUSE, JOHN WALKER & SONS, RED LABEL, BLACK LABEL, DOUBLE BLACK, GOLD LABEL RESERVE, PLATINUM LABEL, BLUE LABEL, XR, KING GEORGE V, JOHN WALKER & SONS ODYSSEY, THE JOHN WALKER, DIAMOND JUBILEE, THE ADVENTURER, THE SPICE ROAD, THE GOLD ROUTE AND THE ROYAL ROUTE WORDS, THE STRIDING FIGURE DEVICE AND ASSOCIATED LOGOS, JOY WILL TAKE YOU FURTHER ARE TRADEMARKS. © JOHN WALKER & SONS 2015. THE EXPLORERS CLUB FLAG AND ASSOCIATED LOGOS ARE TRADEMARKS OF THE EXPLORERS CLUB, A GLOBAL NON-PROFIT ORGANIZATION HEADQUARTERED IN NEW YORK CITY."
               <br />
@@ -44,15 +47,13 @@ const Footer = ( props ) => {
             </p>
           </div>
           <div className="footer-sns">
-            <a href="/"><img src="/assets/facebook2-icon.png" alt="페이스북으로 이동"/></a>
-            <a href="/"><img src="/assets/instagram-icon.png" alt="인스타그램으로 이동"/></a>
-            <a href="/"><img src="/assets/twitter-icon.png" alt="트위터로 이동"/></a>
-            <a href="/"><img src="/assets/youtube-icon.png" alt="유튜브로 이동"/></a>
+            <a href="https://www.instagram.com/johnnywalker/"><img src={ instagram } alt="인스타그램으로 이동"/></a>
+            <a href="https://twitter.com/JohnnyWalker"><img src={ twitter } alt="트위터로 이동"/></a>
+            <a href="https://www.youtube.com/@johnniewalkerwhisky"><img src={ youtube } alt="유튜브로 이동"/></a>
           </div>
         </div>
       </div>
     </footer>
   )
 }
-
 export default Footer;

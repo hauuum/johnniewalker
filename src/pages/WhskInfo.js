@@ -24,7 +24,6 @@ const WhskInfo = () => {
       desc: `초기의 위스키는 수도승들이 증류하여 상당히 가벼웠습니다.
 숙성이 이루어지지 않아 날것에 가까웠고, 수두에서 중풍까지 주로 치료 목적으로 사용되었기 때문이죠.
 그럼 오늘날의 위스키는 어떻게 탄생했을까요?`,
-      url: `/public/assets/whsk1.png`
     },
     {
       id: 1,
@@ -32,8 +31,7 @@ const WhskInfo = () => {
       title: 'HOW WHISKY IS MADE',
       desc: `스카치 위스키를 제조하는것은 가내 업에서부터 정밀한 공정의 발달까지
 오랜 시간에 걸쳐 발전된 기술입니다.
-진정한 스카치 위스키를 제조하는 데 필요한 기본적인 부분을 간단히 소개하겠습니다.`,
-      url: `/public/assets/whsk2.png`
+진정한 스카치 위스키를 제조하는 데 필요한 기본적인 부분을 간단히 소개하겠습니다.`
     },
     {
       id: 2,
@@ -41,8 +39,7 @@ const WhskInfo = () => {
       title: 'TYPES OF WHISKY',
       desc: `싱글 몰트 스카치 위스키와 블렌디드 스카치 위스키 간의 차이점은 무엇입니까?
 또 Whisky와 Whisk'e'y, 버번과 테네시 위스키, 라이(rye) 위스키의 차이는 무엇일까요?
-위스키에 진심인 여러분을 위해 준비했습니다.`,
-      url: `/public/assets/whsk3.png`
+위스키에 진심인 여러분을 위해 준비했습니다.`
     },
     {
       id: 3,
@@ -50,16 +47,14 @@ const WhskInfo = () => {
       title: 'HOW TO DRINK WHISKY',
       desc: `위스키를 마시는 데 특정한 좋은 방법이나 나쁜 방법은 없습니다.
 여러분이 그 순간을 즐기는 것이 가장 중요합니다.
-하지만 위스키의 더 깊은 풍미를 느끼게 해주는 다양한 테크닉은 존재합니다.`,
-      url: `/public/assets/whsk4.png`
+하지만 위스키의 더 깊은 풍미를 느끼게 해주는 다양한 테크닉은 존재합니다.`
     },
     {
       id: 4,
       className: 'serve-whsk',
       title: 'SERVES AND WHISKY COCKTAILS',
       desc: `진정으로 위대한 위스키는 다재다능해야 합니다.
-조니워커를 사용하여 깊고 선명한 풍미의 다양한 위스키 칵테일을 만들어 보십시오.`,
-      url: `/public/assets/whsk5.png`
+조니워커를 사용하여 깊고 선명한 풍미의 다양한 위스키 칵테일을 만들어 보십시오.`
     },
   ]
 
@@ -68,7 +63,7 @@ const WhskInfo = () => {
       <h2 className="ir-so">위스키 상식 페이지입니다.</h2>
       <div className="whsk-video-wrap">
         <div className="whsk-video">
-          <iframe src="https://www.youtube.com/embed/YqdmgUX_kY8" title="YouTube video player" frameBorder="0"></iframe>
+          <iframe src="https://www.youtube.com/embed/YqdmgUX_kY8?autoplay=1&mute=1"  title="YouTube video player" frameBorder="0" autoPlay></iframe>
         </div>
         <div className="whsk-video-desc">
           <div className="container">

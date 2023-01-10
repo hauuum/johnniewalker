@@ -20,7 +20,6 @@ const InquiryForm = () => {
   });
 
   const [checked, setChecked] = useState(false);
-
   const [data, setData] = useState([]);
 
   const dataId = useRef(0)
@@ -95,7 +94,6 @@ const InquiryForm = () => {
       emailSite: "naver",
       content: "",
     });
-    
   }
 
   return (
@@ -209,10 +207,5 @@ const InquiryForm = () => {
       <InquiryList inquiryList={ data } />
     </div>
   )
-
-
-
-
 }
-
 export default InquiryForm;

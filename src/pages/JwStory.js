@@ -20,5 +20,4 @@ const JwStory = () => {
     </div>
   )
 }
-
 export default JwStory;

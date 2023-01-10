@@ -1,4 +1,10 @@
 import React, { useEffect, useState } from "react";
+//Images
+import prdBg from '../assets/prdDetail-bg.png';
+import jwblue from '../assets/prd-detail-item.png';
+import serveImg from '../assets/prd-detail1.png';
+import storyImg from '../assets/prd-detail4.png';
+
 
 const PrdDetail = () => { 
   const [scroll, setScroll] = useState(false);
@@ -38,7 +44,7 @@ const PrdDetail = () => {
           style={{
             height: width >= 1200 ? width * 0.24 : ( width < 768 ? width * 0.48 : width * 0.38)
           }}>
-          <img src="/assets/prdDetail-bg.png" alt="" />
+          <img src={ prdBg } alt="배경이미지" />
         </div>
         <div className="prd-list-wrap prd-info">
           <div className="container">
@@ -47,12 +53,13 @@ const PrdDetail = () => {
                 height: width >= 1200 ? 'auto' : ( width < 768 ? width * 0.52 : width * 0.36) 
               }}
             >
-              <img src="/assets/prd-detail-item.png" alt="조니워커 블루라벨" />
-              <img src="/assets/prd-detail-item.png" alt="조니워커 블루라벨" />
-              <img src="/assets/prd-detail-item.png" alt="조니워커 블루라벨" />
-              <img src="/assets/prd-detail-item.png" alt="조니워커 블루라벨" />
-              <img src="/assets/prd-detail-item.png" alt="조니워커 블루라벨" />
-              <img src="/assets/prd-detail-item.png" alt="조니워커 블루라벨" />
+              <img src={ jwblue } alt="조니워커 블루라벨" />
+              <img src={ jwblue } alt="조니워커 블루라벨" />
+              <img src={ jwblue } alt="조니워커 블루라벨" />
+              <img src={ jwblue } alt="조니워커 블루라벨" />
+              <img src={ jwblue } alt="조니워커 블루라벨" />
+              <img src={ jwblue } alt="조니워커 블루라벨" />
+              <img src={ jwblue } alt="조니워커 블루라벨" />
             </div>
             <div className="prd-desc">
               <h3>JOHNNIE WALKER® BLUE LABEL</h3>
@@ -73,7 +80,7 @@ const PrdDetail = () => {
   여러 방법 중 스트레이트로 드시거나 얼음물을 곁들여서 드실 것을 추천합니다.  <br />
   퍼펙트 서브는 다음과 같습니다.</p>
             <div className="prd-serve-imgs">
-              <img src="/assets/prd-detail1.png" alt="" />
+              <img src={ serveImg } alt="조니워커 서브" />
             </div>
             <div className="prd-serve-desc">
               <p>
@@ -111,7 +118,7 @@ const PrdDetail = () => {
             <h3 className="ExtraTitle">STORY</h3>
             <span className="slash"></span>
             <div className="prd-story-cont">
-              <img src="/assets/prd-detail4.png" alt="" />
+              <img src={ storyImg } alt="조니워커 스토리" />
               <p>1867년에 존 워커의 아들 알렉산더가 '올드 하이랜드 위스키(Old Highland Whisky)'를 만들었습니다. 
   스코틀랜드 구석구석에서 좋은 향을 모아 만든 예술품 같은 특별한 블렌드 였습니다. 조니워커 블루 라벨은 이 하이랜드 위스키를 기념하는 것으로 워커의 천재성과 진정성을 구현하는 위스키입니다.
                 <br />

@@ -3,49 +3,46 @@ import { NavLink } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, } from "swiper";
 
-// import jwBlack from '../../public/assets/jw-prd-black.png';
 const mainPrdList = [
   {
     inx: '1',
     name: '조니워커 블랙 라벨',
     nameEng: 'JOHNNIE WALKER® BLACK LABEL®',
-    src: '/assets/jw-prd-black.png',
+    src: '/johnniewalker/static/media/jw-prd-black.2a4efc7390e46391e91e.png',
   },
   {
     inx: '2',
     name: '조니워커 더블 블랙',
     nameEng: 'JOHNNIE WALKER® DOUBLE BLACK™',
-    src: '/assets/jw-prd-db-black.png',
+    src: '/johnniewalker/static/media/jw-prd-black.2a4efc7390e46391e91e.png',
   },
   {
     inx: '3',
     name: '조니워커 블루 라벨',
     nameEng: 'JOHNNIE WALKER® BLUE LABEL™',
-    src:'/assets/jw-prd-blue.png',
+    src:'/johnniewalker/static/media/jw-prd-blue.f269b7e77d7417b947a7.png',
   },
   {
     inx: '4',
     name: '조니워커 레드 라벨',
     nameEng: 'JOHNNIE WALKER® RED LABEL',
-    src: '/assets/jw-prd-red.png',
+    src: '/johnniewalker/static/media/jw-prd-red.07889180b71d04ad0ce6.png',
   },
   {
     inx: '5',
     name: '조니워커 골드 라벨 리저브',
     nameEng: 'JOHNNIE WALKER® GOLD LABEL RESERVE™',
-    src: '/assets/jw-prd-reserve.png',
+    src: '/johnniewalker/static/media/jw-prd-reserve.8606f0e0dc63614b2736.png',
   },
   {
     inx: '6',
     name: '조니워커 플래티넘 라벨 18년산',
     nameEng: 'JOHNNIE WALKER® PLATINUM LABEL™ 18 YEAR OLD',
-    src: '/assets/jw-prd-18.png',
+    src: '/johnniewalker/static/media/jw-prd-18.f544f21f4d76ed5ee9b3.png',
   },
 ]
 
-
 const MainPrdListSlide = () => { 
-
   return (
     <div className="page-wrap main-prd-list">
       <h3 className="ir-so">조니워커 제품 리스트 영역</h3>
@@ -74,8 +71,7 @@ const MainPrdListSlide = () => {
             }}
           >
             {
-              mainPrdList.map((ele, inx) => {
-                //console.log(ele.src)
+              mainPrdList.map((ele) => {
                 return (
                   <SwiperSlide key={ele.inx}>
                     <NavLink to={"/PrdList/PrdDetail"}>

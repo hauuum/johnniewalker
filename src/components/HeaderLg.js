@@ -1,10 +1,8 @@
 import React, { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-
 // Images
 import logoImgLarge from '../assets/jw-lg-logo.png';
-import searchIcon from '../assets/search-gray-icon.png';
-
+import searchIconGray from '../assets/search-gray-icon.png';
 
 
 const HeaderLg = () => {
@@ -30,7 +28,7 @@ const HeaderLg = () => {
             <label>
               <input type="type" className="input search-lg-input" placeholder='제품 또는 스토어를 검색해주세요'/>
             </label>
-            <img src={ searchIcon } alt="검색하기"/>
+            <img src={ searchIconGray } alt="검색하기"/>
           </form>
         </div>
       </div>

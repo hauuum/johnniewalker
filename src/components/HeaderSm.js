@@ -1,6 +1,13 @@
 import React, { useRef } from "react";
 import { NavLink } from 'react-router-dom';
 
+// Imagse
+import logoImgSm from '../assets/jw-sm-logo.png';
+import searchIconWhite from '../assets/search-white-icon.png';
+import openMenuIcon from '../assets/menu-icon.png';
+import closeMenuIcon from '../assets/left-arrow-white-icon.png';
+
+
 const HeaderSm = () => { 
   const sideMenu = useRef(null);
   const searchForm = useRef(null);
@@ -31,14 +38,14 @@ const HeaderSm = () => {
       <header className="header-sm">
         <div className="container">
           <h1 className="logo-sm">
-            <NavLink to={"/"} onClick={onScroll}><img src="/assets/jw-sm-logo.png" alt="조니워커 로고"/></NavLink>
+            <NavLink to={"/"} onClick={onScroll}><img src={ logoImgSm } alt="조니워커 로고"/></NavLink>
           </h1>
           <div className="header-icon-wrap">
             <a href="/" onClick={ searchFnc }>
-              <img src="/assets/search-white-icon.png" alt="검색하기" />
+              <img src={ searchIconWhite } alt="검색하기" />
             </a>
             <a href="/" onClick={ navFnc }>
-              <img src="/assets/menu-icon.png" alt="메뉴보기" />
+              <img src={ openMenuIcon } alt="메뉴보기" />
             </a>
           </div>
         </div>
@@ -47,10 +54,10 @@ const HeaderSm = () => {
         <div className='container'>
           <div className="side-menu-top">
             <a href="/" className="closed-btn" onClick={ closeSideMenu }>
-              <img src="/assets/left-arrow-white-icon.png" alt="메뉴창 닫기" />
+              <img src={ closeMenuIcon } alt="메뉴창 닫기" />
             </a>
             <h1 className="logo-sm">
-              <a href="/"><img src="/assets/jw-sm-logo.png" alt="조니워커 로고"/></a>
+              <a href="/"><img src={ logoImgSm } alt="조니워커 로고"/></a>
             </h1>
           </div>
           <div className="search-wrap" ref={ searchForm }>
