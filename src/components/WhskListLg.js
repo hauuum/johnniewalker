@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 const WhskListLg = ({ list }) => { 
   return (
@@ -10,7 +11,9 @@ const WhskListLg = ({ list }) => {
               <div>
                 <h3 className="ExtraTitle">{ele.title}</h3>
                 <p>{ele.desc}</p>
-                <a href="/johnniewalker/JwStory" className="btn-yellow">더 읽어보기 <span className="right-arrow"></span></a>
+                <NavLink to={"/JwStory"}className="btn-yellow">더 읽어보기 
+                  <span className="right-arrow"></span>
+                </NavLink>
               </div>
             </div>
           </div>
