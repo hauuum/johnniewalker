@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Parallax, Pagination, Autoplay, EffectFade } from "swiper";
+import { Parallax, Pagination, EffectFade } from "swiper";
 
 const MainBanner = () => { 
   return (

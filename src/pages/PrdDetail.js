@@ -25,7 +25,7 @@ const PrdDetail = () => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY >= 0)
     });
-  }, []);
+  });
 
   return (
     <>

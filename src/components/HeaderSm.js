@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 // Imagse
 import logoImgSm from '../assets/jw-sm-logo.png';
 import logoImgLarge from '../assets/jw-lg-logo.png';
-import searchIconWhite from '../assets/search-white-icon.png';
 import searchIconGray from '../assets/search-gray-icon.png';
 import openMenuIcon from '../assets/menu-icon.png';
 import closeMenuIcon from '../assets/left-arrow-white-icon.png';
