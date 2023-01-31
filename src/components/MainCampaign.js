@@ -38,7 +38,7 @@ const MainCampaign = () => {
 아래의 버튼을 클릭하여 책임있는 음주에 문화에 동참해주세요
           </p>
         <p className="campaign-prtcp"><em>{counter.toLocaleString()}</em>명</p>
-          <button className="btn-blue" onClick={numCounter}>서약에 참여하기</button>
+          <button className="btn-blue" onClick={numCounter}>캠페인 참여하기</button>
       </div>
     </div>
   )

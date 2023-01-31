@@ -19,16 +19,7 @@ const MainBanner = () => {
       >
         <SwiperSlide>
           <div className="container">
-            <div className="banner-txt">
-              <p data-swiper-parallax="-200">조니워커 블루</p>
-              <p data-swiper-parallax="-400">BLUE LABEL LIMITED EDITION</p>
-              <p data-swiper-parallax="-700">조니워커 블루 라벨 리미티드 에디션은 특별하고 진귀한 위스키를 기념하기 위한 위스키입니다</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="container">
-            <div className="banner-txt">
+            <div className="banner-txt" data-swiper-parallax="-600">
               <p data-swiper-parallax="-200">SINCE 1867</p>
               <p data-swiper-parallax="-400">BLACK LABEL®</p>
               <p data-swiper-parallax="-700">조니워커 블랙 라벨은 다른 모든 고급 블렌드의 벤치마크로 자리잡은 진정한 아이콘입니다</p>
@@ -37,7 +28,16 @@ const MainBanner = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="container">
-            <div className="banner-txt">
+            <div className="banner-txt" data-swiper-parallax="-600">
+              <p data-swiper-parallax="-200">조니워커 블루</p>
+              <p data-swiper-parallax="-400">BLUE LABEL LIMITED EDITION</p>
+              <p data-swiper-parallax="-700">조니워커 블루 라벨 리미티드 에디션은 특별하고 진귀한 위스키를 기념하기 위한 위스키입니다</p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="container">
+            <div className="banner-txt" data-swiper-parallax="-600">
               <p data-swiper-parallax="-200">위스키 상식</p>
               <p data-swiper-parallax="-400">조니워커를 더 현명하고 알차게 즐길 수 방법</p>
               <p data-swiper-parallax="-700">위스키의 더 깊은 풍미를 느끼게 해주는 다양한 테크닉으로 그 순간을 영원토록 기억하세요</p>

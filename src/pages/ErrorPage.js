@@ -1,17 +1,17 @@
 import { useNavigate } from 'react-router-dom';
 
-const JwStory = () => { 
+const ErrorPage = () => { 
   const navigate = useNavigate();
   const goBackFnc = () => { 
     navigate(-1);
   }
 
   return (
-    <div className="page jw-page">
-      <h2 className="ir-so">조니워커 스토리 페이지입니다.</h2>
+    <div className="page error-page">
+      <h2 className="ir-so">존재하지 않는 페이지입니다.</h2>
       <p style={{
         margin: '2.5rem auto 0'
-      }}>현재 준비중인 페이지입니다.</p>
+      }}>존재하지 않는 페이지입니다. (404 ERROR)</p>
       <button className="btn-blue"
         style={{
           margin: '1.25rem auto 5rem'
@@ -20,4 +20,4 @@ const JwStory = () => {
     </div>
   )
 }
-export default JwStory;
+export default ErrorPage;

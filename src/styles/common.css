@@ -3,7 +3,7 @@
 ==========================================================================*/
 :root {
 	--MainBlue: #0062A4;
-	--MainYellow: #F6BE00;
+	--MainYellow: #f6aa00;
 	--MainWhite: #fff;
 	--MainBlack: #090631;
 	--Color35: #353535;
@@ -78,7 +78,8 @@
 [class$="page"] {
 	padding: 0 0 12.5rem;
 }
-.error-page {
+.error-page,
+.jw-page {
 	padding: 8rem 0 12.5rem;
 }
 
@@ -115,18 +116,20 @@
 .btn-blue{
 	display: inline-flex;
 	font-size: var(--Font14);
-	background: var(--MainBlue);
+	font-weight: 600;
+	/* background: var(--MainBlue); */
+	background: var(--MainYellow);
 	color: var(--MainWhite);
 	padding: 1rem 2rem;
 	line-height: 1;
-	border: 2px solid var(--MainWhite);
+	border: 2px solid var(--MainYellow);
 	box-sizing: border-box;
 	transition: .2s;
 } 
 .btn-blue:hover {
-	border: 2px solid var(--MainBlue);
+	border: 2px solid var(--MainYellow);
 	background: var(--MainWhite);
-	color: var(--MainBlue);
+	color: var(--MainYellow);
 	box-sizing: border-box;
 }
 select {

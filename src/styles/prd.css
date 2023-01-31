@@ -106,7 +106,7 @@
   box-sizing: border-box;
   text-align: center;
   word-break: keep-all;
-  background: rgba(246,190,0,.9);
+  background: var(--MainYellow);
   transition: .4s;
 }
 .prdList-page .prd-son-item:hover {

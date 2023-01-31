@@ -63,7 +63,7 @@ const WhskInfo = () => {
       <h2 className="ir-so">위스키 상식 페이지입니다.</h2>
       <div className="whsk-video-wrap">
         <div className="whsk-video">
-          <iframe src="https://www.youtube.com/embed/YqdmgUX_kY8?autoplay=1&mute=1"  title="YouTube video player" autoPlay></iframe>
+          <iframe src="https://www.youtube.com/embed/0TlpDQjqB1k?autoplay=1&mute=1" title="YouTube video player"></iframe>
         </div>
         <div className="whsk-video-desc">
           <div className="container">

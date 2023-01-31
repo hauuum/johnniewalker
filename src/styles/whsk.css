@@ -89,7 +89,6 @@
   color: var(--MainWhite);
 }
 .whsk-info-page .whsk-list-wrap p {
-  font-weight: 400;
   color: #f0f0f0;
   margin: .5rem 0 2.5rem;
   white-space: pre-wrap;

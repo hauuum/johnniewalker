@@ -12,6 +12,7 @@ import PrdDetail from './pages/PrdDetail';
 import WhskInfo from './pages/WhskInfo';
 import JwStory from './pages/JwStory';
 import Inquiry from './pages/Inquiry';
+import ErrorPage from './pages/ErrorPage';
 import Footer from './components/Footer';
 
 // Style
@@ -44,21 +45,12 @@ function App() {
         <div>
           <Routes>
             <Route exact path='/' element={<Main />} />
-          </Routes>
-          <Routes>
             <Route path='/PrdList' element={<PrdList />} />
-          </Routes>
-          <Routes>
             <Route path='/PrdList/PrdDetail' element={<PrdDetail />} />
-          </Routes>
-          <Routes>
             <Route path='/WhskInfo' element={<WhskInfo />} />
-          </Routes>
-          <Routes>
             <Route path='/JwStory' element={<JwStory />} />
-          </Routes>
-          <Routes>
             <Route path='/Inquiry' element={<Inquiry />} />
+            <Route path='*' element={<ErrorPage />} />
           </Routes>
         </div>
         <Footer />

@@ -15,26 +15,26 @@
   justify-content: center;
 }
 .main-banner .swiper-pagination-bullet {
-  width: .625rem;
-  height: .625rem;
-  background: rgba(0,0,0,.8);
+  width: .75rem;
+  height: .75rem;
+  background: #000;
 }
 .main-banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: .5rem;
-  height: .5rem;
+  width: .625rem;
+  height: .625rem;
   background: var(--MainBlue);
 }
  .main-banner .swiper-slide {
   position: relative;
   aspect-ratio: 1/0.48;
-  background-image: url('/src/assets/main-banner1.jpg');
+  background-image: url('/src/assets/main-banner2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
 }
 .main-banner .swiper-slide:nth-of-type(2){
-  background-image: url('/src/assets/main-banner2.jpg');
+  background-image: url('/src/assets/main-banner1.jpg');
   background-position: center center;
 }
 .main-banner .swiper-slide:nth-of-type(3){
