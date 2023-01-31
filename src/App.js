@@ -45,11 +45,23 @@ function App() {
         <div>
           <Routes>
             <Route exact path='/' element={<Main />} />
+          </Routes>
+          <Routes>
             <Route path='/PrdList' element={<PrdList />} />
+          </Routes>
+          <Routes>
             <Route path='/PrdList/PrdDetail' element={<PrdDetail />} />
+          </Routes>
+          <Routes>
             <Route path='/WhskInfo' element={<WhskInfo />} />
+          </Routes>
+          <Routes>
             <Route path='/JwStory' element={<JwStory />} />
+          </Routes>
+          <Routes>
             <Route path='/Inquiry' element={<Inquiry />} />
+          </Routes>
+          <Routes>
             <Route path='*' element={<ErrorPage />} />
           </Routes>
         </div>

@@ -242,7 +242,7 @@
 .prdList-page .jw-story-txt p  {
   margin: .25rem 0;
 }
-.prdList-page .jw-story-txt p span:not{
+.prdList-page .jw-story-txt p span{
   color: var(--Color42);
   font-weight: 400;
 }
