@@ -3,23 +3,23 @@ import React from "react";
 const SnsImgList = [
   {
     inx: '1',
-    src: '/johnniewalker/static/media/sns-1.c023b63a3b14fac072a7.jpg',
+    src: [require('../assets/sns-1.jpg')]
   },
   {
     inx: '2',
-    src: '/johnniewalker/static/media/sns-2.231bf9fd857242d7081d.jpg',
+    src: [require('../assets/sns-2.jpg')]
   },
   {
     inx: '3',
-    src:'/johnniewalker/static/media/sns-3.aa50fb4db6f32c072154.jpg',
+    src: [require('../assets/sns-3.jpg')]
   },
   {
     inx: '4',
-    src: '/johnniewalker/static/media/sns-4.392e79aff594b742325c.jpg',
+    src: [require('../assets/sns-4.jpg')]
   },
   {
     inx: '5',
-    src: '/johnniewalker/static/media/sns-51.1e604d7bd63f11b31b64.jpg',
+    src: [require('../assets/sns-51.jpg')]
   },
 ]
 

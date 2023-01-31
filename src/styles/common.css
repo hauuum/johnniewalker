@@ -21,15 +21,14 @@
 	--ExtraTitle: 1.75rem;
 }
 
-
-
 /*==========================================================================
 	FORM TAGS
 ==========================================================================*/
 .input {
 	width: 17.5rem;
 	height: 2.625rem;
-	padding: .875rem;
+	line-height: 2.625rem;
+	padding: .5rem;
 	font-size: var(--Font14);
 	color: var(--Color42);
 	outline: none;
@@ -45,7 +44,6 @@
 	font-size: .75rem;
 	color: var(--Color9e);
 }
-
 
 /*==========================================================================
 	IR효과 (웹접근성)
@@ -78,13 +76,15 @@
 	COMMON CLASS
 ==========================================================================*/
 [class$="page"] {
-	padding: 14.375rem 0 12.5rem;
+	padding: 0 0 12.5rem;
+}
+.error-page {
+	padding: 8rem 0 12.5rem;
 }
 
 /* CONTAINER */
 .container {
-	/* border: 1px solid red; */
-	box-sizing: border-box;
+	width: auto;
 }
 .page-wrap {
 	padding-top: 6.25rem;
@@ -93,7 +93,7 @@
 /* Title */
 .title {
 	font-size: var(--Title);
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--MainBlack);
 	word-break: keep-all;
 }
@@ -131,11 +131,14 @@
 }
 select {
 	width: 10rem;
+	height: 2.625rem;
 	border: 2px solid var(--Color75);
-	padding: .75rem .75rem; 
+	padding: .5rem; 
 	font-size: .75rem;
+	font-weight: 600;
 	box-sizing: border-box;
 	color: var(--Color75);
+	text-align: center;
 }
 select > option {
 	font-size: .875rem;
@@ -154,7 +157,6 @@ select:focus,
 textarea:focus {
 	border: 2px solid var(--MainBlue);
 } 
-
 .input-search {
 	width: 100%;
 	padding: .5rem 1rem;
@@ -171,7 +173,6 @@ textarea:focus {
 .input-search:focus {
 	border: 4px solid  var(--MainBlue);
 }
-
 .slash {
 	display: inline-block;
 	width: 2px;
@@ -179,21 +180,18 @@ textarea:focus {
 	background: var(--MainYellow);
 	transform: rotate(45deg);
 }
-
 .vldtn {
-	display: block;
+display: block;
   text-align: left;
   font-size: var(--Font12);
 	color: #E00000;
 }
-
 .swiper {
 	position: relative;
 }
 .swiper-slide {
 	width: 100%;
 }
-
 .nav-link {
 	color: var(--MainWhite);
 	padding: 0;

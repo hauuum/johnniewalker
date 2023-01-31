@@ -1,5 +1,5 @@
 header {
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   width: 100%;
@@ -8,56 +8,86 @@ header {
 /*==========================================================================
   HEADER lg
 ==========================================================================*/
-.header-lg-top{
+.header-Lg {
   background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: .5rem 0;
+  box-sizing: border-box;
+
 }
-.header-lg-top .container {
+.header-Lg .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header-lg-top .logo-lg a {
+.header-Lg .logo-lg a {
   display: block;
   height: 100%;
 }
-.header-lg-top .logo-lg img {
+.header-Lg .logo-lg img {
   height: 2.5rem;
 }
-.header-lg-top form {
-  position: relative;
-  padding: 1rem 0;
+.header-Lg .header-lg-right {
+  display: flex;
+  align-items: center;
 }
-.header-lg-top form img {
-  position: absolute;
-  width: 1.25rem;
-  right: .75rem;
-  top: 50%;
-  transform: translateY(-50%);
+.header-Lg nav{
+  display: flex;
+  align-items: center;
 }
-.header-Lg .header-nav {
-  background: rgba(0,0,0,0.8);
+.header-Lg li {
+  font-size: var(--Font14);
+  padding: .75em 0;
+  margin: 0 1rem;
 }
-.header-Lg .header-nav nav{
+.header-Lg nav li.active {
+  color: var(--MainYellow);
+}
+.header-Lg li a {
+  font-weight: 600;
+  color: var(--Color35);
+}
+.header-Lg .search-icon,
+.header-Lg .search-form {
+  display: flex;
+  align-items: center;
+}
+.header-Lg .search-icon button {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #f0f0f0;
+  border-radius: 50%;
+  padding: .375rem;
+  box-sizing: border-box;
+  margin-left: 1.25rem
 }
-.header-Lg .header-nav li {
-  font-size: var(--Font15);
-  padding: .75em 0;
-  color: var(--MainWhite);
-  margin: 0 2rem;
+.header-Lg .search-icon img {
+  width: 1rem;
 }
-.header-Lg .header-nav li.active {
-  color: var(--MainYellow);
+.header-Lg .search-form {
+  display: none;
 }
-
+.header-Lg .search-form button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border-radius: 50%;
+  padding: .375rem;
+  box-sizing: border-box;
+  margin-left: .5rem;
+}
+.header-Lg .search-form img {
+  width: 0.75rem;
+}
 
 /*==========================================================================
   HEADER sm
 ==========================================================================*/
 .header-sm {
-  background: rgba(0,0,0,.8);
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
 }
 .header-sm .container {
   display: flex;

@@ -1,17 +1,11 @@
 import React from "react";
-// Images
-import arrowRightIcon from '../assets/right-arrow-yellow-icon.png';
 
-const WhskListSm = ({ list , width }) => { 
+const WhskListSm = ({ list }) => { 
   return (
     list.map((ele) => {
       return (
         <div>
-          <div key={ele.id} className={'whsk-list-wrap whsk-list-wrap-sm ' + ele.className}
-            style={{
-              height: width * 0.48,
-            }}
-          >
+          <div key={ele.id} className={'whsk-list-wrap whsk-list-wrap-sm ' + ele.className}>
             <div className="container">
               <h3 className="ExtraTitle">{ele.title}</h3>
             </div>
@@ -19,7 +13,7 @@ const WhskListSm = ({ list , width }) => {
           <div className="container">
             <div className="whsk-desc-sm">
               <p>{ele.desc}</p>
-              <a href="#" className="btn-yellow">더 읽어보기 <img src={ arrowRightIcon } alt="더 읽어보기"/></a>
+              <a href="/johnniewalker/JwStory" className="btn-yellow">더 읽어보기 <span className="right-arrow"></span></a>
             </div>
           </div>
         </div>

@@ -31,14 +31,14 @@ const MainCampaign = () => {
             <span>#NODRUNKDRIVING</span>
           </div>
           <div className="video-wrap">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/56b09ZyLaWk" title="YouTube video player" ></iframe>
+            <iframe src="https://www.youtube.com/embed/56b09ZyLaWk" title="YouTube video player" ></iframe>
           </div>
           <p className="campaign-desc">
             다음과 같은 인원이 해당 캠페인에 참가하였습니다.<br/>
 아래의 버튼을 클릭하여 책임있는 음주에 문화에 동참해주세요
           </p>
         <p className="campaign-prtcp"><em>{counter.toLocaleString()}</em>명</p>
-          <button className="btn-blue" onClick={numCounter}>JOIN THE PACT</button>
+          <button className="btn-blue" onClick={numCounter}>서약에 참여하기</button>
       </div>
     </div>
   )

@@ -105,7 +105,7 @@ const InquiryForm = () => {
         <form>
           <fieldset>
             <div className="form-list">
-              <label htmlFor="inquiryType">문의 종류
+              <label htmlFor="inquiryType">*<span className="ir-so">필수입력</span>문의 종류
               <select
                 id="inquiryType"
                 name="type"
@@ -119,7 +119,7 @@ const InquiryForm = () => {
               </label>
             </div>
             <div className="form-list">
-              <label htmlFor="inquiryName">이름
+              <label htmlFor="inquiryName">*<span className="ir-so">필수입력</span>이름
                 <input
                   type="text"
                   id="inquiryName"
@@ -133,7 +133,7 @@ const InquiryForm = () => {
               </label>
             </div>
             <div className="form-list">
-              <label htmlFor="inquiryNumber">연락처
+              <label htmlFor="inquiryNumber">*<span className="ir-so">필수입력</span>연락처
                 <input
                   type="number"
                   id="inquiryNumber"
@@ -148,7 +148,7 @@ const InquiryForm = () => {
               <span className="vldtn">필수 입력 사항입니다.</span>
             </div>
             <div className="form-list form-email">
-              <label htmlFor="inquiryEmail">이메일
+              <label htmlFor="inquiryEmail">*<span className="ir-so">필수입력</span>이메일
                 <div>
                   <input
                     type="email"
@@ -169,13 +169,13 @@ const InquiryForm = () => {
                       <option value={"nate"}>@nate.com</option>
                       <option value={"gmail"}>@gmail.com</option>
                       <option value={"daum"}>@daum.net</option>
-                      <option value={"hanmail"}>@hanmail.com</option>
+                      <option value={"hanmail"}>@hanmail.net</option>
                   </select>
                 </div>
               </label>
             </div>
             <div className="form-list form-text">
-              <label htmlFor="inquiryCont">문의내용
+              <label htmlFor="inquiryCont">*<span className="ir-so">필수입력</span>문의내용
                 <textarea
                   rows="10"
                   id="inquiryCont"

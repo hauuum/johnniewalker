@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { NavLink } from 'react-router-dom';
 import MainBanner from '../components/MainBanner';
 import MainPrdListSlide from '../components/MainPrdListSlide';
@@ -10,29 +10,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // Images
 import limitedEdition from '../assets/jw-limitedEdition.png';
-import rightArrowIcon from '../assets/right-arrow-blue-icon.png';
 
 const Main = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const [jwHouseWidth, setJwHouseWidth] = useState(0);
-  const widthResize = () => {
-    setWidth(window.innerWidth);
-    jwHouseResize();
-  }
-  const jwHouseList = useRef();
-  const jwHouseResize = () => { 
-    setJwHouseWidth(jwHouseList.current.clientWidth);
-  }
-
-  useEffect(() => {
-    jwHouseResize();
-    
-    window.addEventListener("resize", widthResize);
-    return () => {
-      window.removeEventListener("resize", widthResize);
-    }
-  });
-
   return (
     <div className="main-page">
       <h2 className="ir-so">조니워커 메인 페이지</h2>
@@ -49,7 +28,7 @@ const Main = () => {
               <p>장대한 성취를 축하하는 것부터 단순하고 진심 어린 '감사합니다'에 이르기까지 모든 경우에 어울리는 조니워커 위스키 선물이 있습니다. <br />
               완벽한 선물을 위해 탁월한 블렌디드 스카치 위스키 제품군을 살펴보십시오.<br />
               조니워커의 빅 볼드 플레이버(big bold flavours)를 기념하여 탄생한 조니워커 로얄 블루리미티드 에디션 상자. </p>
-              <NavLink to={"/PrdList/PrdDetail"}>자세히 보러가기 <img src={ rightArrowIcon } alt="자세히 보러가기" /></NavLink>
+              <NavLink to={"/PrdList/PrdDetail"}>자세히 보러가기 <span className="right-arrow"></span></NavLink>
             </div>
           </div>
         </div>
@@ -60,12 +39,10 @@ const Main = () => {
           <h4 className="title">특별한 당신을 위한 조니워커 하우스에 초대합니다</h4>
           <p className="subTitle">조니 워커 하우스는 조니워커의 고급 스카치 위스키를 체험해 볼수 있는 위스키 전용 대사관입니다.</p>
           <div className="jw-house-row">
-              <div className="jw-house-list" ref={ jwHouseList }>
+              <div className="jw-house-list">
                 <NavLink to={"/JwStory"}>
                   <div>
-                    <div className="jw-house-bg bg1" style={{
-                      height: jwHouseWidth * 0.5559322
-                    }}>
+                    <div className="jw-house-bg bg1">
                   </div>
                   <div className="jw-house-desc-lg">
                       <div>
@@ -82,17 +59,15 @@ const Main = () => {
                 </div>
               </NavLink>
             </div>
-            <div className="jw-house-list" ref={ jwHouseList }>
+            <div className="jw-house-list">
               <NavLink to={"/JwStory"}>
                 <div>
-                  <div className="jw-house-bg bg2" style={{
-                      height: jwHouseWidth * 0.5559322
-                    }}> 
+                  <div className="jw-house-bg bg2"> 
                   </div>
                   <div className="jw-house-desc-lg">
                     <div>
-                        <em>베이징</em>
-                    <p>청두는 중국에서 세 번째로 세워진 조니워커 하우스입니다. 위스키 교육, 개인 맞춤 블렌드와 음식 메뉴, 희귀한 위스키 체험 및 조니워커 마스터 블렌더 세션 등 특별서비스를 제공하는 고급 위스키 엠버시입니다. 이 하우스에는 세계에서 제일 큰 '걷고 있는 모습을 한 신사'의 동상이 전시되어 있습니다. 연못에서 의기양양하게 일어서고 있는 모습을 한 이 동상은, 중국해를 가로지른 조니워커의 여정을 상징하고 있습니다.</p>
+                      <em>베이징</em>
+                      <p>청두는 중국에서 세 번째로 세워진 조니워커 하우스입니다. 위스키 교육, 개인 맞춤 블렌드와 음식 메뉴, 희귀한 위스키 체험 및 조니워커 마스터 블렌더 세션 등 특별서비스를 제공하는 고급 위스키 엠버시입니다. 이 하우스에는 세계에서 제일 큰 '걷고 있는 모습을 한 신사'의 동상이 전시되어 있습니다. 연못에서 의기양양하게 일어서고 있는 모습을 한 이 동상은, 중국해를 가로지른 조니워커의 여정을 상징하고 있습니다.</p>
                     </div>
                   </div>
                 </div>
@@ -105,10 +80,7 @@ const Main = () => {
           <NavLink to={"/JwStory"} className="btn-blue">조니워커 하우스 더보기</NavLink>
         </div>
       </div>
-      <div className="line-banner" style={{
-          height: width > 1200 ? width * 0.1770833 : ( width < 768 ? width * 0.3555555 : width * 0.192708333)
-        }}>
-      </div>
+      <div className="line-banner"></div>
       <MainCampaign />
     </div>
   )

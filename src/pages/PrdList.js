@@ -1,51 +1,50 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import { NavLink } from 'react-router-dom';
 //Images
-import prdBg from '../assets/prdList-bg.png';
-import rightArrowIcon from '../assets/right-arrow-blue-icon.png';
+import prdBg from '../assets/prdList-bg.jpg';
 
 const prdSonsList = [
   {
     inx: '1',
     name: '존 워커 앤 선즈 킹 조지5세',
     nameEng: 'JOHN WALKER & SONS KING GEORGE V',
-    src: '/johnniewalker/static/media/jw-prd-01.9095bb09869839ba1471.png',
+    src: [require('../assets/jw-prd-01.png')],
   },
   {
     inx: '2',
     name: '존 워커 앤 선즈 프라이빗 컬렉션 2014 에디션',
     nameEng: 'JOHN WALKER & SONS PRIVATE COLLECTION 2014',
-    src: '/johnniewalker/static/media/jw-prd-02.946c92b16200fdab4d44.png',
+    src: [require('../assets/jw-prd-02.png')],
   },
   {
     inx: '3',
     name: '존 워커 앤 선즈 XR 21',
     nameEng: 'JOHN WALKER & SONS XR 21',
-    src:'/johnniewalker/static/media/jw-prd-03.952052b41285cbb5aba0.png',
+    src: [require('../assets/jw-prd-03.png')],
   },
   {
     inx: '4',
     name: '존 워커 앤 선즈 프라이빗 컬렉션 2015 에디션',
     nameEng: 'JOHN WALKER & SONS PRIVATE COLLECTION 2015',
-    src: '/johnniewalker/static/media/jw-prd-04.fe7689c2893501b57823.png',
+    src: [require('../assets/jw-prd-04.png')],
   },
   {
     inx: '5',
     name: '존 워커 앤 선즈 오디세이',
     nameEng: 'JOHN WALKER & SONS ODYSSEY',
-    src: '/johnniewalker/static/media/jw-prd-05.72d89923353e0fe3e3a0.png',
+    src: [require('../assets/jw-prd-05.png')],
   },
   {
     inx: '6',
     name: '존 워커 앤 선즈 더 존 워커',
     nameEng: 'JOHN WALKER & SONS THE JOHN WALKER',
-    src: '/johnniewalker/static/media/jw-prd-06.071b780789b44259af96.png',
+    src: [require('../assets/jw-prd-06.png')],
   },
   {
     inx: '7',
     name: '존 워커 앤 선즈 다이아몬드 쥬빌리',
     nameEng: 'JOHN WALKER & SONS DIAMOND JUBILEE',
-    src: '/johnniewalker/static/media/jw-prd-07.213dc7d24f57d937384b.png',
+    src: [require('../assets/jw-prd-07.png')],
   },
 ]
 const prdColoursList = [
@@ -53,37 +52,37 @@ const prdColoursList = [
     inx: '1',
     name: '조니워커 블랙 라벨',
     nameEng: 'JOHNNIE WALKER® BLACK LABEL®',
-    src: '/johnniewalker/static/media/jw-prd-black.2a4efc7390e46391e91e.png',
+    src: [require('../assets/jw-prd-black.png')],
   },
   {
     inx: '2',
     name: '조니워커 더블 블랙',
     nameEng: 'JOHNNIE WALKER® DOUBLE BLACK™',
-    src: '/johnniewalker/static/media/jw-prd-black.2a4efc7390e46391e91e.png',
+    src: [require('../assets/jw-prd-db-black.png')],
   },
   {
     inx: '3',
     name: '조니워커 블루 라벨',
     nameEng: 'JOHNNIE WALKER® BLUE LABEL™',
-    src:'/johnniewalker/static/media/jw-prd-blue.f269b7e77d7417b947a7.png',
+    src: [require('../assets/jw-prd-blue.png')],
   },
   {
     inx: '4',
     name: '조니워커 레드 라벨',
     nameEng: 'JOHNNIE WALKER® RED LABEL',
-    src: '/johnniewalker/static/media/jw-prd-red.07889180b71d04ad0ce6.png',
+    src: [require('../assets/jw-prd-red.png')],
   },
   {
     inx: '5',
     name: '조니워커 골드 라벨 리저브',
     nameEng: 'JOHNNIE WALKER® GOLD LABEL RESERVE™',
-    src: '/johnniewalker/static/media/jw-prd-reserve.8606f0e0dc63614b2736.png',
+    src: [require('../assets/jw-prd-reserve.png')],
   },
   {
     inx: '6',
     name: '조니워커 플래티넘 라벨 18년산',
     nameEng: 'JOHNNIE WALKER® PLATINUM LABEL™ 18 YEAR OLD',
-    src: '/johnniewalker/static/media/jw-prd-18.f544f21f4d76ed5ee9b3.png',
+    src: [require('../assets/jw-prd-18.png')],
   },
 ]
 const prdLimitList= [
@@ -91,44 +90,23 @@ const prdLimitList= [
     inx: '1',
     name: '조니워커 블루 라벨 리미티드 에디션',
     nameEng: 'JOHNNIE WALKER® BLUE LABEL LIMITED EDITION',
-    src: '/johnniewalker/static/media/jw-prd-08.229d506247871e596bc1.png',
+    src: [require('../assets/jw-prd-08.png')],
   },
   {
     inx: '2',
     name: '조니워커 골드 라벨 리저브 리미티드 에디션',
     nameEng: 'JOHNNIE WALKER® GOLD LABEL RESERVE LIMITED EDITION',
-    src: '/johnniewalker/static/media/jw-prd-09.99fe204e8caf1e48d528.png',
+    src: [require('../assets/jw-prd-09.png')],
   },
   {
     inx: '3',
     name: '조니워커 더블 블랙 리미티드 에디션',
     nameEng: 'JOHNNIE WALKER® DOUBLE BLACK LIMITED EDITION',
-    src: '/johnniewalker/static/media/jw-prd-10.57ba997b4d73f3e20e0d.png',
+    src: [require('../assets/jw-prd-10.png')],
   },
 ]
 
 const PrdList = () => { 
-  const [width, setWidth] = useState(window.innerWidth);
-  const [jwStoryWidth, setJwStorywidth] = useState(0); 
-
-  const widthResize = () => {
-    setWidth(window.innerWidth);
-    jwStoryResize();
-  }
-  const jwStoryResize = () => { 
-    setJwStorywidth(jwStory.current.clientWidth);
-  }
-  const jwStory = useRef(null);
-
-  useEffect(() => {
-    jwStoryResize();
-
-    window.addEventListener("resize", widthResize);
-    return () => {
-      window.removeEventListener("resize", widthResize);
-    }
-  }, []);
-
   return (
     <div className="page prdList-page">
       <h2 className="ir-so">조니워커 제품 라인업 페이지</h2>
@@ -224,20 +202,16 @@ const PrdList = () => {
         </div>
       </div>
     </div>
-    <div className="jw-story" ref={ jwStory }>
+    <div className="jw-story">
       <div className="container">
-        <div className="jw-story-bg"
-            style={{
-              height: width > 1200 ? '28.75rem' : jwStoryWidth * 0.420833333
-            }}
-        ></div>
+        <div className="jw-story-bg"></div>
           <div className="jw-story-txt">
             <div className="title"><span>조니워커의 스토리가 궁금하신가요?</span></div>
             <p><span>조니워커의 전설은 지금 이 순간에도 쓰여지고 있습니다.</span></p>
             <p><span>평범한 농장 청년이였던 그가 세계에서 가장 큰 위스키 브랜드를</span></p>
             <p><span>세우기까지 조니워커의 역사를 직접 확인해보세요</span></p>
             <div className="more-btn">
-            <NavLink to={"/JwStory"}>자세히 보러가기<img src={ rightArrowIcon } alt="자세히 보러가기" /></NavLink>
+            <NavLink to={"/JwStory"}>자세히 보러가기<span className="right-arrow"></span></NavLink>
             </div>
           </div>
         </div>

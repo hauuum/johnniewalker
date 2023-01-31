@@ -26,7 +26,6 @@ import './styles/whsk.css';
 import './styles/inquiry.css';
 import './styles/responsive.css';
 
-
 function App() {
   const isLg = useMediaQuery({
     query: "(min-width: 48rem)"

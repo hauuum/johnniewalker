@@ -1,6 +1,5 @@
 /* prdList */
 .prdList-page {
-  padding-top: 4.625rem;
   background: #FBFBFB;
 }
 .prdList-page .prd-banner {
@@ -16,10 +15,10 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url('/src/assets/prdList-bg.png') center center no-repeat;
+  background: url('/src/assets/prdList-bg.jpg') center center no-repeat;
   background-size: contain;
-  z-index: 1;
   opacity: .048;
+  z-index: 1;
 }
 .prdList-page .prd-banner:after {
   content: '';
@@ -29,14 +28,13 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url('/src/assets/prdList-bg.png') center center no-repeat;
+  background: url('/src/assets/prdList-bg.jpg') center center no-repeat;
   background-size: contain;
-  z-index: 1;
   opacity: .06;
 }
 .prdList-page .prd-banner .container {
   position: relative;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 }
 .prdList-page .prd-banner img{
   width: 62%;
@@ -112,7 +110,7 @@
   transition: .4s;
 }
 .prdList-page .prd-son-item:hover {
-  border: 3px solid var(--MainYellow);
+  border: 1px solid var(--MainYellow);
   box-sizing: border-box;
 }
 .prdList-page .prd-son-item:hover .prd-son-hover {
@@ -124,15 +122,13 @@
 .prdList-page .prd-colours .prd-items {
   grid-template-columns: repeat(3, 1fr);
 }
-.prdList-page .prd-colours .prd-colours-item {
-  position: relative;
-}
 .prdList-page .prd-colours .prd-colours-item a {
+  position: relative;
   background: rgba(0,0,0,0.95);
   border: 4px solid rgba(0,0,0,0.95);
   box-sizing: border-box;
 }
-.prdList-page .prd-colours .prd-colours-item:before {
+.prdList-page .prd-colours .prd-colours-item a:before {
   content: '';
   display: block;
   position: absolute;
@@ -140,7 +136,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(rgba(255,255,255,.1) 20%, black);
+  background: radial-gradient(rgba(255,255,255,.1) 10%, black);
   z-index: 0;
 }
 .prdList-page .prd-colours .prd-colours-item img {
@@ -153,6 +149,7 @@
   bottom: .5rem;
   width: calc(100% - 1.5rem);
   background: rgba(0,0,0,.6);
+  backdrop-filter: blur(4px);
   z-index: 1;
   color: var(--MainWhite);
   font-size: var(--Font12);
@@ -201,7 +198,7 @@
   transition: .4s;
 }
 .prdList-page .prd-limited .prd-limited-item:hover {
-  border: 3px solid var(--MainYellow);
+  border: 1px solid var(--MainYellow);
 }
 .prdList-page .prd-limited .prd-limited-item:hover .prd-limited-hover {
   bottom: 0;
@@ -215,14 +212,14 @@
 }
 .prdList-page .jw-story-bg {
   width: 70%;
-  height: 28.75rem;
-  background: url(/src/assets/jw-story.png) center center no-repeat;
+  aspect-ratio: 1/0.440833333;
+  background: url(/src/assets/jw-story.jpg) center center no-repeat;
   background-size: cover;
   border-radius: 0 360px 360px 0;
 }
 .prdList-page .jw-story-txt {
   position: absolute;
-  right: 5rem;
+  right: 10%;
   top: 50%;
   width: 40%;
   transform: translateY(-50%);
@@ -245,7 +242,7 @@
 .prdList-page .jw-story-txt p  {
   margin: .25rem 0;
 }
-.prdList-page .jw-story-txt p span{
+.prdList-page .jw-story-txt p span:not{
   color: var(--Color42);
   font-weight: 400;
 }
@@ -257,6 +254,28 @@
   align-items: center;
   padding: 1rem .875rem;
   background: #fbfbfb;
+  font-weight: 600;
+}
+.prdList-page .jw-story-txt .more-btn .right-arrow {
+  position: relative;
+  display: inline-block;
+  width: 1rem;
+  height: 2px;
+  background: var(--MainBlue);
+  margin-left: 0.25rem;
+  margin-top: .375rem;
+  padding: 0;
+}
+.prdList-page .jw-story-txt .more-btn .right-arrow::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -3px;
+  width: 0.6rem;
+  height: 2px;
+  background: var(--MainBlue);
+  transform: rotate(39deg);
 }
 .prdList-page .jw-story-txt img {
   height: 1rem;
@@ -264,13 +283,11 @@
 }
 
 /* prdDetail */
-.prdDetail-page {
-  padding-top: 4.625rem;
-}
 .prdDetail-page .prd-banner {
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 1/0.18;
   background: linear-gradient(to right, #01BDBE 20%, #012F47 40%);
 }
 .prdDetail-page .prd-banner img{
@@ -288,6 +305,8 @@
 .prdDetail-page .prd-info .prd-imgs{
   position: relative;
   width: 20%;
+  height: 18.75rem;
+  margin-left: 8%;
 }
 .prdDetail-page .prd-info .prd-imgs img {
   position: absolute;
@@ -342,7 +361,7 @@
 }
 
 .prdDetail-page .prd-info .prd-desc{
-  width: 50%;
+  width: calc(85% - 20% - 8% - 1.25rem);
   margin-left: 1.25rem;
   padding: 2.5rem 0;
   box-sizing: border-box;
@@ -354,7 +373,6 @@
   color: #012F47;
 }
 .prdDetail-page .prd-info .prd-desc p {
-  width: 80%;
   font-size: var(--Font16);
   margin-top: 1.25rem;
   text-align: left;
@@ -424,7 +442,7 @@
 .prdDetail-page .prd-recipe .prd-recipe-imgs a {
   position: relative;
   display: block;
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
 }
 .prdDetail-page .prd-recipe .prd-recipe-imgs a:nth-of-type(2n-1){
@@ -440,7 +458,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: .6s;
+  transition: .4s;
 }
 .prdDetail-page .prd-recipe .prd-recipe-imgs a:hover img{
   transform: scale(1.2);

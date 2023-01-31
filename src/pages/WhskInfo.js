@@ -63,7 +63,7 @@ const WhskInfo = () => {
       <h2 className="ir-so">위스키 상식 페이지입니다.</h2>
       <div className="whsk-video-wrap">
         <div className="whsk-video">
-          <iframe src="https://www.youtube.com/embed/YqdmgUX_kY8?autoplay=1&mute=1"  title="YouTube video player" frameBorder="0" autoPlay></iframe>
+          <iframe src="https://www.youtube.com/embed/YqdmgUX_kY8?autoplay=1&mute=1"  title="YouTube video player" autoPlay></iframe>
         </div>
         <div className="whsk-video-desc">
           <div className="container">
@@ -81,11 +81,9 @@ const WhskInfo = () => {
           </div>
         </div>
       </div>
-      
       {
         width >= 768 ? <WhskLIstLg list={whskList} width={width} /> : <WhskListSm list={whskList} width={width} />
       }
-
     </div>
   )
 }

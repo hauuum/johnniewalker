@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 //Images
-import prdBg from '../assets/prdDetail-bg.png';
+import prdBg from '../assets/prdDetail-bg.jpg';
 import jwblue from '../assets/prd-detail-item.png';
 import serveImg from '../assets/prd-detail1.png';
-import storyImg from '../assets/prd-detail4.png';
+import storyImg from '../assets/prd-detail4.jpg';
 
 
 const PrdDetail = () => { 
-  const [scroll, setScroll] = useState(false);
+  const [scroll, setScroll] = useState(true);
   const [res, setRes] = useState([]);
-  const [width, setWidth] = useState(window.innerWidth);
 
   const Access_Key = '2mVXsnQUDdCom5BvXWE4iEQnPeF-MtC-MTXXOzTq2Ak';
   const url = `https://api.unsplash.com/search/photos?page=1&query=cocktail&client_id=${Access_Key}&orientation=landscape&per_page=13`
@@ -20,39 +19,24 @@ const PrdDetail = () => {
     const result = responJson.results;
     setRes(result);
   }
-
-  const widthResize = () => {
-    setWidth(window.innerWidth);
-  }
-
+ 
   useEffect(() => { 
     getImages();
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY >= 0)
     });
-    window.addEventListener("resize", widthResize);
-    return () => {
-      window.removeEventListener("resize", widthResize);
-    }
-  }, [])
+  }, []);
 
   return (
     <>
       <div className="page prdDetail-page">
         <h2 className="ir-so">조니워커 제품 상세페이지</h2>
-        <div className="prd-banner"
-          style={{
-            height: width >= 1200 ? width * 0.24 : ( width < 768 ? width * 0.48 : width * 0.38)
-          }}>
+        <div className="prd-banner">
           <img src={ prdBg } alt="배경이미지" />
         </div>
         <div className="prd-list-wrap prd-info">
           <div className="container">
-            <div className={"prd-imgs " + (scroll ? 'scroll' : '')}
-              style={{
-                height: width >= 1200 ? 'auto' : ( width < 768 ? width * 0.52 : width * 0.36) 
-              }}
-            >
+            <div className={"prd-imgs " + (scroll ? 'scroll' : '')}>
               <img src={ jwblue } alt="조니워커 블루라벨" />
               <img src={ jwblue } alt="조니워커 블루라벨" />
               <img src={ jwblue } alt="조니워커 블루라벨" />
@@ -65,7 +49,8 @@ const PrdDetail = () => {
               <h3>JOHNNIE WALKER® BLUE LABEL</h3>
               <p>조니워커 블루 라벨은 타의 추종을 불허하는 걸작입니다. <br/>
   스코틀랜드에서도 가장 진귀한 위스키 원액을 엄선하여 블렌드한 
-  탁월한 위스키입니다. 일만개 캐스크 중에서도 오직 단 하나의 확률로
+  탁월한 위스키입니다. <br/>
+  일만개 캐스크 중에서도 오직 단 하나의 확률로
   조니워커 블루 라벨의 독특한 풍미를 구현하는데 사용됩니다. <br/>
   아주 특별한 날을 위한, 아주 특별한 위스키입니다.
               </p>
@@ -127,7 +112,7 @@ const PrdDetail = () => {
             </div>
           </div>
         </div>
-        <div className="prd-list-wrap prd-recipe">
+        <div className="prd-list-wrap prd-recipe ">
           <div className="container">
             <h3 className="ExtraTitle">RECIPE</h3>
             <span className="slash"></span>
@@ -135,10 +120,10 @@ const PrdDetail = () => {
               {
                 res.map((ele) => { 
                   return (
-                    <a href={ele.urls.small} className="prd-img" key={ele.id}>
+                    <a href={ele.urls.small} target="_blank" rel="noreferrer" className="prd-img" key={ele.id}>
                       <img
                         src={ele.urls.small}
-                        alt={ ele.alt_description} />
+                        alt={ele.alt_description} />
                     </a>
                   )
                 })
@@ -155,14 +140,3 @@ export default PrdDetail;
 
 
 
-// 스크롤 이벤트 사용하기
-// https://whales.tistory.com/91
-// https://goddino.tistory.com/317?category=1080917
-// https://wazacs.tistory.com/21
-
-
-// 언스플래스 api 이용해서 리스트 가져오기
-// https://unsplash.com/developers
-// https://fastcampus.co.kr/courses/203720/clips/ (참고자료1)
-// https://ljh86029926.gitbook.io/coding-apple-react/4/4-unsplash-api#unsplash-api  (참고자료2)
-// https://nscworld.net/2022/04/13/unsplash-api-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/ 

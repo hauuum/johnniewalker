@@ -1,44 +1,44 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 
 const mainPrdList = [
   {
     inx: '1',
     name: '조니워커 블랙 라벨',
     nameEng: 'JOHNNIE WALKER® BLACK LABEL®',
-    src: '/johnniewalker/static/media/jw-prd-black.2a4efc7390e46391e91e.png',
+    src: [require('../assets/jw-prd-black.png')],
   },
   {
     inx: '2',
     name: '조니워커 더블 블랙',
     nameEng: 'JOHNNIE WALKER® DOUBLE BLACK™',
-    src: '/johnniewalker/static/media/jw-prd-black.2a4efc7390e46391e91e.png',
+    src: [require('../assets/jw-prd-db-black.png')],
   },
   {
     inx: '3',
     name: '조니워커 블루 라벨',
     nameEng: 'JOHNNIE WALKER® BLUE LABEL™',
-    src:'/johnniewalker/static/media/jw-prd-blue.f269b7e77d7417b947a7.png',
+    src: [require('../assets/jw-prd-blue.png')],
   },
   {
     inx: '4',
     name: '조니워커 레드 라벨',
     nameEng: 'JOHNNIE WALKER® RED LABEL',
-    src: '/johnniewalker/static/media/jw-prd-red.07889180b71d04ad0ce6.png',
+    src: [require('../assets/jw-prd-red.png')],
   },
   {
     inx: '5',
     name: '조니워커 골드 라벨 리저브',
     nameEng: 'JOHNNIE WALKER® GOLD LABEL RESERVE™',
-    src: '/johnniewalker/static/media/jw-prd-reserve.8606f0e0dc63614b2736.png',
+    src: [require('../assets/jw-prd-reserve.png')],
   },
   {
     inx: '6',
     name: '조니워커 플래티넘 라벨 18년산',
     nameEng: 'JOHNNIE WALKER® PLATINUM LABEL™ 18 YEAR OLD',
-    src: '/johnniewalker/static/media/jw-prd-18.f544f21f4d76ed5ee9b3.png',
+    src: [require('../assets/jw-prd-18.png')],
   },
 ]
 
@@ -51,10 +51,14 @@ const MainPrdListSlide = () => {
         <p className="subTitle">개척정신(pioneering), 상징성(iconic), 탁월함(exceptional)을 갖춘 클래식 블렌드</p>  
         <div className="row">
           <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             centeredSlides={true}
             loop={true}
             navigation={true}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
             pagination={{
               type: "fraction",
             }}
@@ -75,7 +79,7 @@ const MainPrdListSlide = () => {
                 return (
                   <SwiperSlide key={ele.inx}>
                     <NavLink to={"/PrdList/PrdDetail"}>
-                      <img src={ele.src} alt={ele.name} />
+                      <img src={ ele.src } alt={ele.name} />
                       <div className="prd-txt">
                         <div>{ele.name}</div>
                         <div>{ele.nameEng}</div>

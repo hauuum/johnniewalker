@@ -18,7 +18,8 @@ const Footer = ( props ) => {
         <div>
           <div className="footer-lang">
             <p>{props.lang}</p>
-            <select value={lang} onChange={transLang}>
+            <label htmlFor="lang" className="ir-so">언어 선택하기</label>
+            <select value={lang} id="lang" onChange={transLang}>
               <option value="KOREAN">KOREAN</option>
               <option value="ENGLISH">ENGLISH</option>
               <option value="CHINESE">CHINESE</option>
@@ -30,11 +31,11 @@ const Footer = ( props ) => {
           </div>
           <div className="footer-sitemap">
             <div>
-              <a href="#">이용약관</a>
-              <a href="#">개인정보 보호 및 쿠키공지</a>
-              <a href="#">UGC POLICY</a>
-              <a href="#">웹접근성 도움말</a>
-              <a href="#">PRIVACY SETTINGS</a>
+              <a href="#!">이용약관</a>
+              <a href="#!">개인정보 보호 및 쿠키공지</a>
+              <a href="#!">UGC POLICY</a>
+              <a href="#!">웹접근성 도움말</a>
+              <a href="#!">PRIVACY SETTINGS</a>
             </div>
             <p className="footer-desc">DRINKAWARE.CO.UKDRINKIQTHEBAR.COMTHE JOHNNIE WALKER, JOHNNIE WALKER HOUSE, JOHN WALKER & SONS, RED LABEL, BLACK LABEL, DOUBLE BLACK, GOLD LABEL RESERVE, PLATINUM LABEL, BLUE LABEL, XR, KING GEORGE V, JOHN WALKER & SONS ODYSSEY, THE JOHN WALKER, DIAMOND JUBILEE, THE ADVENTURER, THE SPICE ROAD, THE GOLD ROUTE AND THE ROYAL ROUTE WORDS, THE STRIDING FIGURE DEVICE AND ASSOCIATED LOGOS, JOY WILL TAKE YOU FURTHER ARE TRADEMARKS. © JOHN WALKER & SONS 2015. THE EXPLORERS CLUB FLAG AND ASSOCIATED LOGOS ARE TRADEMARKS OF THE EXPLORERS CLUB, A GLOBAL NON-PROFIT ORGANIZATION HEADQUARTERED IN NEW YORK CITY."
               <br />
