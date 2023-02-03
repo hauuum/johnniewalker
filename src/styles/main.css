@@ -13,16 +13,20 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  bottom: 1rem;
 }
 .main-banner .swiper-pagination-bullet {
-  width: .75rem;
-  height: .75rem;
-  background: #000;
+  width: .875rem;
+  height: .875rem;
+  background: #fff;
+  opacity: .4;
 }
 .main-banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: .625rem;
-  height: .625rem;
-  background: var(--MainBlue);
+  width: .5rem;
+  height: .5rem;
+  background: #0084dd;
+  border: 2px solid #fff;
+  opacity: 1;
 }
  .main-banner .swiper-slide {
   position: relative;
