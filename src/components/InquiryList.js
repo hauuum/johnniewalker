@@ -1,4 +1,4 @@
-const InquiryList = ({ inquiryList }) => { 
+const InquiryList = ({ inquiryList, onDelete }) => { 
   return (
     <div className="inquiry-list">
     {
@@ -10,7 +10,11 @@ const InquiryList = ({ inquiryList }) => {
           </div>
           <p className="inquiry-cont">{ ele.content }</p>
           <div className="delete-list">
-            <button className="delete-btn">삭제하기</button>
+            <button className="delete-btn" onClick={() => {
+              if(window.confirm(`해당 문의글을 삭제하시겠습니까?`)){
+                onDelete(ele.id);
+              }
+            }}>삭제하기</button>
           </div>
         </div>
       ))

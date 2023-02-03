@@ -15,11 +15,11 @@ const InquiryForm = () => {
     author: "",
     number: "",
     email: "",
-    emailSite: "defalut",
-    content: "",
+    emailSite: "naver",
+    content: ""
   });
 
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(true);
   const [data, setData] = useState([]);
 
   const dataId = useRef(0)
@@ -40,7 +40,7 @@ const InquiryForm = () => {
       type,
       author,
       content,
-      id: dataId.current
+      id: dataId.current,
     };
     dataId.current += 1;
     setData([newItem, ...data]);
@@ -69,29 +69,21 @@ const InquiryForm = () => {
     }
     if (!checked) {
       alert("개인정보 수집 이용해 동의가 필요합니다.")
-      checkedInput.current.focus();
       return;
-    }
-    else {
-      authorInput.current.classList.remove('error');
-      numberInput.current.classList.remove('error');
-      emailInput.current.classList.remove('error');
-      contentTextarea.current.classList.remove('error');
     }
     
     onCreateFnc(state.type, state.author, state.content);
     alert("등록되었습니다!");
 
-    authorInput.current.blur();
-    numberInput.current.blur();
-    emailInput.current.blur();
-    contentTextarea.current.blur();
-    checkedInput.current.blur();
     authorInput.current.classList.remove('error');
     numberInput.current.classList.remove('error');
     emailInput.current.classList.remove('error');
     contentTextarea.current.classList.remove('error');
-
+    authorInput.current.blur();
+    numberInput.current.blur();
+    emailInput.current.blur();
+    contentTextarea.current.blur();
+    
     setState({
       type: "일반문의",
       author: "",
@@ -102,6 +94,11 @@ const InquiryForm = () => {
     });
   }
 
+  const onDelete = (targetId) => {
+    const newList = data.filter((ele) => ele.id !== targetId);
+    setData(newList);
+  }
+  
   return (
     <div className="inquiry">
       <h3 className="title">기타문의</h3>
@@ -186,11 +183,11 @@ const InquiryForm = () => {
                   rows="10"
                   id="inquiryCont"
                   name="content"
-                  value={state.content}
+                  value={ state.content }
                   className="input"
                   placeholder="문의 내용을 입력해주세요"
-                  onChange={changeStateFnc}
-                  ref={contentTextarea}
+                  onChange={ changeStateFnc }
+                  ref={ contentTextarea }
                 />
               </label>
             </div>
@@ -200,9 +197,10 @@ const InquiryForm = () => {
                   type="checkbox"
                   id="formCheck"
                   name="validation"
-                  value={checked}
-                  onChange={changeCheckedFnc}
+                  value={ checked }
+                  onChange={ changeCheckedFnc }
                   ref={ checkedInput }
+                  defaultChecked={ checked }
                 /> 개인정보 수집 이용에 동의합니다.
               </label>
             </div>
@@ -210,7 +208,7 @@ const InquiryForm = () => {
         </form>
         <button className="btn-blue" onClick={submitFnc}>문의글 등록하기</button>
       </div>
-      <InquiryList inquiryList={ data } />
+      <InquiryList inquiryList={ data } onDelete={ onDelete }/>
     </div>
   )
 }
