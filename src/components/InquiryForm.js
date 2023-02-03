@@ -11,7 +11,7 @@ const InquiryForm = () => {
   const checkedInput = useRef();
   
   const [state, setState] = useState({
-    type: "normal",
+    type: "일반문의",
     author: "",
     number: "",
     email: "",
@@ -49,22 +49,22 @@ const InquiryForm = () => {
   const submitFnc = () => { 
     if (state.author.length < 1) { 
       authorInput.current.focus();
-      authorInput.current.style.borderColor = '#E00000';
+      authorInput.current.classList.add('error');
       return;
     } 
     if (state.number.length < 5) { 
       numberInput.current.focus();
-      numberInput.current.style.borderColor = '#E00000';
+      numberInput.current.classList.add('error');
       return;
     } 
     if (state.email.length < 1) { 
       emailInput.current.focus();
-      emailInput.current.style.borderColor = '#E00000';
+      emailInput.current.classList.add('error');
       return;
     } 
     if (state.content.length < 5) {
       contentTextarea.current.focus();
-      contentTextarea.current.style.borderColor = '#E00000';
+      contentTextarea.current.classList.add('error');
       return;
     }
     if (!checked) {
@@ -72,19 +72,25 @@ const InquiryForm = () => {
       checkedInput.current.focus();
       return;
     }
+    else {
+      authorInput.current.classList.remove('error');
+      numberInput.current.classList.remove('error');
+      emailInput.current.classList.remove('error');
+      contentTextarea.current.classList.remove('error');
+    }
     
     onCreateFnc(state.type, state.author, state.content);
-    alert("저장 성공!");
+    alert("등록되었습니다!");
 
     authorInput.current.blur();
     numberInput.current.blur();
     emailInput.current.blur();
     contentTextarea.current.blur();
     checkedInput.current.blur();
-    authorInput.current.style.borderColor = 'inherit';
-    numberInput.current.style.borderColor = 'inherit';
-    emailInput.current.style.borderColor = 'inherit';
-    contentTextarea.current.style.borderColor = 'inherit';
+    authorInput.current.classList.remove('error');
+    numberInput.current.classList.remove('error');
+    emailInput.current.classList.remove('error');
+    contentTextarea.current.classList.remove('error');
 
     setState({
       type: "일반문의",

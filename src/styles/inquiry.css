@@ -182,11 +182,24 @@
 .inquiry-page .inquiry-items .inquiry-cont {
   font-size: var(--Font14);
   text-align: left;
-  margin-top: 1rem;
+  margin: 1rem 0;
   word-break: keep-all;
   color: var(--Color35);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+.inquiry-page .inquiry-items .delete-list {
+  padding-top: 0.5rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+}
+.inquiry-page .inquiry-items .delete-list button {
+  font-size: var(--Font12);
+  font-weight: 400;
+  color: var(--Color75);
+}
+.inquiry-page .inquiry .form-list input.error:focus,
+.inquiry-page .inquiry .form-list textarea.error:focus {
+  border-color: #E00000;
+}
