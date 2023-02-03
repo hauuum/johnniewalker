@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/johnniewalker/static/css/main.cafcd2d1.css",
-    "main.js": "/johnniewalker/static/js/main.9023f4b6.js",
+    "main.js": "/johnniewalker/static/js/main.0b39d0d2.js",
     "static/media/pattern.svg": "/johnniewalker/static/media/pattern.5991e00b56983148e4c0.svg",
     "static/media/jw-prd-09.png": "/johnniewalker/static/media/jw-prd-09.99fe204e8caf1e48d528.png",
     "static/media/jw-prd-10.png": "/johnniewalker/static/media/jw-prd-10.57ba997b4d73f3e20e0d.png",
@@ -9,7 +9,6 @@
     "static/media/sns-51.jpg": "/johnniewalker/static/media/sns-51.1e604d7bd63f11b31b64.jpg",
     "static/media/jw-limitedEdition.png": "/johnniewalker/static/media/jw-limitedEdition.50138f5b07a9e3bf8be1.png",
     "static/media/line-banner.jpg": "/johnniewalker/static/media/line-banner.3a6adf03dc3e4005bbd6.jpg",
-    "static/media/jw-prd-05.png": "/johnniewalker/static/media/jw-prd-05.72d89923353e0fe3e3a0.png",
     "static/media/whsk3.jpg": "/johnniewalker/static/media/whsk3.41571d3a0c0f547234da.jpg",
     "static/media/prdDetail-bg.jpg": "/johnniewalker/static/media/prdDetail-bg.9533d7b5869dfa619644.jpg",
     "static/media/whsk1.jpg": "/johnniewalker/static/media/whsk1.b8a02f361fdc1898d6f2.jpg",
@@ -17,22 +16,23 @@
     "static/media/whsk4.jpg": "/johnniewalker/static/media/whsk4.100a52249fc0578dbce5.jpg",
     "static/media/jw-prd-blue.png": "/johnniewalker/static/media/jw-prd-blue.f269b7e77d7417b947a7.png",
     "static/media/sns-2.jpg": "/johnniewalker/static/media/sns-2.231bf9fd857242d7081d.jpg",
-    "static/media/jw-prd-06.png": "/johnniewalker/static/media/jw-prd-06.071b780789b44259af96.png",
+    "static/media/jw-prd-05.png": "/johnniewalker/static/media/jw-prd-05.1c7f37919a3805a60ab1.png",
     "static/media/jw-prd-18.png": "/johnniewalker/static/media/jw-prd-18.f544f21f4d76ed5ee9b3.png",
     "static/media/whsk2.jpg": "/johnniewalker/static/media/whsk2.0513ba4d3c80fa6dbceb.jpg",
     "static/media/jw-prd-black.png": "/johnniewalker/static/media/jw-prd-black.2a4efc7390e46391e91e.png",
     "static/media/jw-prd-reserve.png": "/johnniewalker/static/media/jw-prd-reserve.8606f0e0dc63614b2736.png",
-    "static/media/jw-prd-03.png": "/johnniewalker/static/media/jw-prd-03.952052b41285cbb5aba0.png",
     "static/media/jw-house1.jpg": "/johnniewalker/static/media/jw-house1.c626ad3039eb1bd0c5e8.jpg",
-    "static/media/jw-prd-01.png": "/johnniewalker/static/media/jw-prd-01.9095bb09869839ba1471.png",
+    "static/media/jw-prd-06.png": "/johnniewalker/static/media/jw-prd-06.e22428c1683326efcd44.png",
     "static/media/jw-prd-red.png": "/johnniewalker/static/media/jw-prd-red.07889180b71d04ad0ce6.png",
+    "static/media/jw-prd-03.png": "/johnniewalker/static/media/jw-prd-03.533ffcf06143b0cd1087.png",
     "static/media/main-banner2.jpg": "/johnniewalker/static/media/main-banner2.686c841dbe4520d5ba55.jpg",
-    "static/media/jw-prd-04.png": "/johnniewalker/static/media/jw-prd-04.fe7689c2893501b57823.png",
+    "static/media/jw-prd-07.png": "/johnniewalker/static/media/jw-prd-07.e5ef86c80e325e542dbc.png",
+    "static/media/jw-prd-01.png": "/johnniewalker/static/media/jw-prd-01.f7e05f066bc2cd6f6d53.png",
     "static/media/prdList-bg.jpg": "/johnniewalker/static/media/prdList-bg.e2592e2f1194b9647c1d.jpg",
     "static/media/jw-prd-db-black.png": "/johnniewalker/static/media/jw-prd-db-black.00482ec6a362bf946d6d.png",
     "static/media/whsk5.jpg": "/johnniewalker/static/media/whsk5.8403441925ca35037bf2.jpg",
-    "static/media/jw-prd-02.png": "/johnniewalker/static/media/jw-prd-02.946c92b16200fdab4d44.png",
-    "static/media/jw-prd-07.png": "/johnniewalker/static/media/jw-prd-07.213dc7d24f57d937384b.png",
+    "static/media/jw-prd-04.png": "/johnniewalker/static/media/jw-prd-04.f3bc6558841ca6a4b430.png",
+    "static/media/jw-prd-02.png": "/johnniewalker/static/media/jw-prd-02.d64b351b2275b82a1360.png",
     "static/media/jw-story.jpg": "/johnniewalker/static/media/jw-story.d7bef6198f9c29532ccb.jpg",
     "static/media/main-banner1.jpg": "/johnniewalker/static/media/main-banner1.8180c8d8c8aba020ffb4.jpg",
     "static/media/sns-1.jpg": "/johnniewalker/static/media/sns-1.c023b63a3b14fac072a7.jpg",
@@ -47,10 +47,10 @@
     "static/media/jw-lg-logo.png": "/johnniewalker/static/media/jw-lg-logo.ab355010915e8af2eceb.png",
     "index.html": "/johnniewalker/index.html",
     "main.cafcd2d1.css.map": "/johnniewalker/static/css/main.cafcd2d1.css.map",
-    "main.9023f4b6.js.map": "/johnniewalker/static/js/main.9023f4b6.js.map"
+    "main.0b39d0d2.js.map": "/johnniewalker/static/js/main.0b39d0d2.js.map"
   },
   "entrypoints": [
     "static/css/main.cafcd2d1.css",
-    "static/js/main.9023f4b6.js"
+    "static/js/main.0b39d0d2.js"
   ]
 }
